@@ -1,44 +1,108 @@
+:root {
+  --accent-color: #1f6c94;
+  --text-color: #555d65;
+  --title-color: #111517;
+  --footer-color: #fff;
+  --button-color: #e7ecef;
+  --icons-color: #5c686d;
+}
+
+body {
+  font-family: Raleway;
+}
+
 .header {
 }
+
 .header-logo {
+  color: var(--title-color);
+  font-size: 32px;
 }
+
 .header-list {
 }
+
 .header-item {
 }
+
 .header-link {
+  color: var(--title-color);
+  font-size: 24px;
 }
+
+.header-link:hover {
+  color: var(--accent-color);
+}
+
 .header-tel {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 16px;
 }
+
 .hero {
 }
+
 .hero-title {
+  color: var(--title-color);
+  font-size: 64px;
+  font-weight: 500;
 }
+
 .hero-text {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 40px;
 }
+
 .hero-button {
+  color: var(--button-color);
+  text-align: center;
+  font-size: 24px;
+  background-color: var(--accent-color);
 }
+
 .hero-photo {
 }
+
 .hero-visitors {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 18px;
 }
-.hero-vievs {
+
+.hero-views {
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
 }
+
 .program {
 }
+
 .program-title {
 }
+
 .program-description {
 }
+
 .program-list {
 }
+
 .program-item {
 }
+
 .program-name {
 }
+
 .program-info {
 }
+
 .program-foto {
 }
+
 .program-button {
 }
