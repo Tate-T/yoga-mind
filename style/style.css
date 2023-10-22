@@ -1,118 +1,149 @@
 :root {
-    --accent-color: #1f6c94;
-    --text-color: #555d65;
-    --title-color: #111517;
-    --footer-color: #fff;
-    --button-color: #e7ecef;
-    --icons-color: #5c686d;
-    --secondary-text-color: #5c686d;
+  --accent-color: #1f6c94;
+  --text-color: #555d65;
+  --title-color: #111517;
+  --footer-color: #fff;
+  --button-color: #e7ecef;
+  --icons-color: #5c686d;
+  --secondary-text-color: #5c686d;
 }
 
 body {
-    font-family: Raleway;
+  font-family: Raleway;
 }
 
-.header {}
+.header {
+}
 
 .header-logo {
-    color: var(--title-color);
-    font-size: 32px;
+  color: var(--title-color);
+  font-size: 32px;
 }
 
-.header-list {}
+.header-list {
+}
 
-.header-item {}
+.header-item {
+}
 
 .header-link {
-    color: var(--title-color);
-    font-size: 24px;
+  color: var(--title-color);
+  font-size: 24px;
 }
 
 .header-link:hover {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .header-tel {
-    color: var(--accent-color);
-    text-align: center;
-    font-size: 16px;
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 16px;
 }
 
-.hero {}
+.hero {
+}
 
 .hero-title {
-    color: var(--title-color);
-    font-size: 64px;
-    font-weight: 500;
+  color: var(--title-color);
+  font-size: 64px;
+  font-weight: 500;
 }
 
 .hero-text {
-    color: var(--text-color);
-    font-size: 24px;
-    font-weight: 350;
-    line-height: 1.67;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 1.67;
 }
 
 .hero-button {
-    color: var(--button-color);
-    text-align: center;
-    font-size: 24px;
-    background-color: var(--accent-color);
+  color: var(--button-color);
+  text-align: center;
+  font-size: 24px;
+  background-color: var(--accent-color);
 }
 
-.hero-photo {}
+.hero-photo {
+}
 
 .hero-visitors {
-    color: var(--title-color);
-    font-size: 18px;
-    font-weight: 350;
-    line-height: 1;
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 1;
 }
 
 .hero-views {
-    color: var(--text-color);
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.33;
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.33;
 }
 
-.program {}
+.program {
+}
 
 .program-title {
-    color: var(--accent-color, #1F6C94);
-    font-size: 40px;
-    font-weight: 500;
+  color: var(--accent-color, #1f6c94);
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .program-description {
-    color: var(--secondary-text-color, #5C686D);
-    text-align: center;
-    font-size: 24px;
-    font-weight: 350;
-    line-height: 1.67;
+  color: var(--secondary-text-color, #5c686d);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 1.67;
 }
 
-.program-list {}
+.program-list {
+}
 
-.program-item {}
+.program-item {
+}
 
 .program-name {
-    color: var(--accent-color, #1F6C94);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.47;
+  color: var(--accent-color, #1f6c94);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.47;
 }
 
 .program-info {
-    color: var(--Paragraph, #555D65);
-    text-align: center;
-    font-size: 16px;
-    line-height: 0.97;
+  color: var(--Paragraph, #555d65);
+  text-align: center;
+  font-size: 16px;
+  line-height: 0.97;
 }
 
-.program-foto {}
+.program-foto {
+}
 
 .program-button {
-    color: var(--accent-color, #1F6C94);
-    font-size: 14px;
+  color: var(--accent-color, #1f6c94);
+  font-size: 14px;
+}
+.trainer-title {
+  color: var(--accent-color, #1f6c94);
+  font-size: 40px;
+  font-weight: 500;
+}
+.trainer-text {
+  color: var(--text-color, #555d65);
+  font-size: 24px;
+  line-height: 1.5;
+}
+.trainer-name {
+  color: var(--accent-color #1f6c94);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+.trainer-description {
+  color: var(--title-color, #111517);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2;
 }
