@@ -11,6 +11,12 @@
 body {
   font-family: Raleway;
 }
+.container{
+  width: 1300px;
+  padding: 0 10px;
+  margin: 0 auto;
+  outline: blueviolet solid 3px;
+}
 
 .header {
 }
