@@ -223,6 +223,21 @@ body {
   border-radius: 20px;
   border: 1px solid var(--accent-color);
 }
+.trainer {
+  background-color: #e7ecef;
+  height: 834px;
+  padding-top: 60px;
+}
+.trainer-box {
+  display: flex;
+}
+.trainer-img {
+  margin-left: 95px;
+  margin-right: 124px;
+}
+.trainer-descript {
+  width: 634px;
+}
 .trainer-title {
   color: var(--accent-color, #1f6c94);
   font-size: 40px;
