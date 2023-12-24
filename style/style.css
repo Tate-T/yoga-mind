@@ -52,7 +52,7 @@ body {
 
 .header-link:hover {
   color: var(--accent-color);
-  font-weight: 10000;
+  font-weight: 700;
 }
 
 .header-btn {
