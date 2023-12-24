@@ -146,12 +146,18 @@ body {
 }
 
 .program {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .program-title {
   color: var(--accent-color, #1f6c94);
   font-size: 40px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+  
 }
 
 .program-description {
@@ -160,12 +166,22 @@ body {
   font-size: 24px;
   font-weight: 350;
   line-height: 1.67;
+  margin-bottom: 54px;
 }
 
 .program-list {
+  display: flex;
+  gap: 20px;
+  
 }
 
 .program-item {
+  background-color: var(--button-color);
+  border-radius: 20px;
+  width: 305px;
+  text-align: center;
+  padding-top:24px;
+  
 }
 
 .program-name {
@@ -173,6 +189,9 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.47;
+  margin-bottom:24px ;
+  
+
 }
 
 .program-info {
@@ -193,6 +212,7 @@ body {
   color: var(--accent-color, #1f6c94);
   font-size: 40px;
   font-weight: 500;
+  
 }
 .trainer-text {
   color: var(--text-color, #555d65);
