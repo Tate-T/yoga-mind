@@ -157,7 +157,6 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 18px;
-  
 }
 
 .program-description {
@@ -172,7 +171,6 @@ body {
 .program-list {
   display: flex;
   gap: 20px;
-  
 }
 
 .program-item {
@@ -180,8 +178,7 @@ body {
   border-radius: 20px;
   width: 305px;
   text-align: center;
-  padding-top:24px;
-  
+  padding-top: 24px;
 }
 
 .program-name {
@@ -189,9 +186,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 1.47;
-  margin-bottom:24px ;
-  
-
+  margin-bottom: 24px;
 }
 
 .program-info {
@@ -200,19 +195,38 @@ body {
   font-size: 16px;
   line-height: 0.97;
 }
-
+.program-romb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9px;
+  margin-bottom: 20px;
+}
 .program-foto {
 }
 
-.program-button {
+/* .program-button {
   color: var(--accent-color, #1f6c94);
   font-size: 14px;
+} */
+.program-button {
+  color: var(--accent-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 23px;
+  margin-bottom: 17px;
+  width: 195px;
+  height: 50px;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid var(--accent-color);
 }
 .trainer-title {
   color: var(--accent-color, #1f6c94);
   font-size: 40px;
   font-weight: 500;
-  
 }
 .trainer-text {
   color: var(--text-color, #555d65);
