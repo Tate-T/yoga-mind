@@ -237,6 +237,7 @@ body {
 }
 .trainer-descript {
   width: 634px;
+  padding-top: 120px;
 }
 .trainer-title {
   color: var(--accent-color, #1f6c94);
