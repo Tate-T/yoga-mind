@@ -11,12 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto&family=Syne&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-box">
         <a class="header-logo" href="./index.html">YogaMind</a>
         <ul class="header-list">
           <li class="header-item">
@@ -31,13 +39,17 @@
           <li class="header-item">
             <a class="header-link" href="">Ціни</a>
           </li>
-          <li>
+          <li class="header-item">
             <a class="header-link" href="">Контакти</a>
           </li>
         </ul>
-        <a class="header-tel" href="tel:38009999999999"
-          >телефонуй 380 099 9999 99 99</a
-        >
+        <a class="header-btn" href="tel:38009999999999">
+          <img src="./img/phone.png" alt="phone" />
+          <span
+            >телефонуй
+            <span class="header-tel">380 099 9999 99 99</span>
+          </span>
+        </a>
       </div>
     </header>
     <main>
