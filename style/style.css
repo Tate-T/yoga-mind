@@ -52,6 +52,7 @@ body {
 
 .header-link:hover {
   color: var(--accent-color);
+  font-weight: 700;
 }
 
 .header-btn {
@@ -237,27 +238,36 @@ body {
 }
 .trainer-descript {
   width: 634px;
-  padding-top: 120px;
+  padding-top: 26px;
 }
 .trainer-title {
   color: var(--accent-color, #1f6c94);
+  font-family: KyivType Sans;
   font-size: 40px;
+  font-style: normal;
   font-weight: 500;
+  margin-bottom: 40px;
 }
 .trainer-text {
   color: var(--text-color, #555d65);
+  font-family: KyivType Sans;
   font-size: 24px;
   line-height: 1.5;
+  margin-bottom: 36px;
 }
 .trainer-name {
-  color: var(--accent-color #1f6c94);
+  color: var(--accent-color);
+  font-family: KyivType Sans;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.33;
+  margin-bottom: 16px;
 }
 .trainer-description {
   color: var(--title-color, #111517);
+  font-family: KyivType Sans;
   font-size: 24px;
+  font-style: normal;
   font-weight: 500;
   line-height: 2;
 }
