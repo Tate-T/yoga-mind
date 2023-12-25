@@ -215,8 +215,6 @@ body {
 .trainer {
   background-color: #e7ecef;
   height: 835px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .trainer-box {
   display: flex;
@@ -225,7 +223,7 @@ body {
   margin-top: 120px;
   margin-bottom: 60px;
   margin-left: 95px;
-  margin-right: 48px;
+  margin-right: 128px;
   height: 512px;
 }
 .trainer-9 {
@@ -240,7 +238,7 @@ body {
 }
 .trainer-descript {
   width: 634px;
-  padding-top: 26px;
+  margin-top: 120px;
 }
 .trainer-title {
   color: var(--accent-color, #1f6c94);
@@ -252,7 +250,7 @@ body {
 }
 .trainer-text {
   color: var(--text-color, #555d65);
-  width: 365px;
+  width: 630px;
   margin-bottom: 110px;
   font-family: KyivType Sans;
   font-size: 24px;
