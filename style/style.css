@@ -217,13 +217,27 @@ body {
   background-color: #e7ecef;
   height: 835px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .trainer-box {
   display: flex;
 }
 .trainer-img {
+  margin-top: 120px;
+  margin-bottom: 60px;
   margin-left: 95px;
-  margin-right: 124px;
+  margin-right: 48px;
+  height: 512px;
+}
+.trainer-9 {
+  position: absolute;
+  margin-top: 93px;
+  left: 410px;
+}
+.back-yoga-tree {
+  position: absolute;
+  margin-top: 60px;
+  left: 340px;
 }
 .trainer-descript {
   width: 634px;
@@ -239,10 +253,28 @@ body {
 }
 .trainer-text {
   color: var(--text-color, #555d65);
+  width: 365px;
+  margin-bottom: 110px;
   font-family: KyivType Sans;
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 36px;
+}
+.name-arrow {
+  display: flex;
+}
+.arrow {
+  margin-left: 80px;
+}
+.arrow-left {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.arrow-right {
+  display: block;
+  width: 50px;
+  height: 50px;
 }
 .trainer-name {
   color: var(--accent-color);
@@ -255,6 +287,7 @@ body {
 .trainer-description {
   color: var(--title-color, #111517);
   font-family: KyivType Sans;
+  margin-top: 22px;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
