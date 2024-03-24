@@ -34,17 +34,17 @@ body {
 
 .soclials-icons:hover {
   stroke: var(--accent-color);
-  box-shadow: var(--accent-color)  1px 2px 15px 4px;
+  box-shadow: var(--accent-color) 1px 2px 15px 4px;
 }
 
 .grid-list {
-display: flex;
-justify-content: center;
-gap: var(--grid-gap);
+  display: flex;
+  justify-content: center;
+  gap: var(--grid-gap);
 }
 
 .grid-item {
-width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards) );
+  width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards));
 }
 
 .header-box {
@@ -91,7 +91,6 @@ width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards) );
   text-align: center;
   font-size: 16px;
   display: flex;
-  width: 258px;
   height: 80px;
   padding: 10px 16px;
   justify-content: center;
@@ -101,8 +100,21 @@ width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards) );
   border-radius: 20px;
   border: 1px solid var(--Accent, #1f6c94);
 }
+.header-btn:hover {
+  background-color: var(--accent-color);
+  color: #e7ecef;
+  box-shadow: var(--title-color) 1px 2px 15px 4px;
+}
 .header-tel {
   display: block;
+}
+.header-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--accent-color);
+}
+.header-btn:hover > .header-icon {
+  fill: #e7ecef;
 }
 
 .hero {
@@ -202,7 +214,10 @@ width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards) );
   background-color: var(--button-color);
   border-radius: 20px;
   text-align: center;
-  padding-top: 24px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .program-name {
@@ -232,13 +247,23 @@ width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards) );
   margin-right: auto;
   margin-top: 23px;
   margin-bottom: 17px;
-  width: 195px;
-  height: 50px;
   padding: 10px 16px;
   align-items: center;
   gap: 10px;
   border-radius: 20px;
   border: 1px solid var(--accent-color);
+  font-family: "KyivType Sans";
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+.program-icon {
+  stroke: var(--accent-color);
+  fill: transparent;
+  width: 17px;
+  height: 13px;
+  stroke-width: 2px;
 }
 .trainer {
   background-color: #e7ecef;
@@ -388,7 +413,7 @@ width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards) );
   margin-top: 16px;
 }
 .ticket-list {
---grid-gap: 73px;
+  --grid-gap: 73px;
 }
 .ticket-item {
   height: 318px;
@@ -505,8 +530,6 @@ width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards) );
   margin-top: 64px;
 }
 
-
-
 .youga {
   background-color: var(--accent-color);
   height: 120px;
@@ -533,5 +556,3 @@ width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards) );
   font-weight: 400;
   line-height: 28px;
 }
-
-
