@@ -301,6 +301,7 @@ body {
   font-weight: 500;
   margin-bottom: 40px;
 }
+
 .trainer-text {
   color: var(--text-color, #555d65);
   width: 630px;
@@ -310,22 +311,13 @@ body {
   line-height: 1.5;
   margin-bottom: 36px;
 }
-.name-arrow {
+.trainer-article {
   display: flex;
 }
 .arrow {
   margin-left: 80px;
 }
-.arrow-left {
-  display: block;
-  width: 50px;
-  height: 50px;
-}
-.arrow-right {
-  display: block;
-  width: 50px;
-  height: 50px;
-}
+
 .trainer-name {
   color: var(--accent-color);
   font-family: KyivType Sans;
@@ -334,6 +326,26 @@ body {
   line-height: 1.33;
   margin-bottom: 16px;
 }
+
+
+.trainer-button{
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border:2px solid var(--accent-color);
+}
+
+
+.trainer-icon{
+fill: transparent;
+stroke: var(--accent-color);
+width: 24px;
+height: 16px;
+
+}
+
+
 .trainer-description {
   color: var(--title-color, #111517);
   font-family: KyivType Sans;
