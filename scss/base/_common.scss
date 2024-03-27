@@ -1,0 +1,17 @@
+body {
+    font-family: Raleway;
+}
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 320px;
+    
+    @media screen and (min-width: 910px){
+        max-width: 910px;
+    }
+
+    @media screen and (min-width: 1300px){
+        max-width: 1300px;
+    }
+}
