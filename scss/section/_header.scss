@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 .header {
@@ -25,7 +24,7 @@
 
     @media screen and (min-width: 910px) {
         font-size: 32px;
-        margin-right: 98px;
+        margin-right: 94px;
     }
 
     @media screen and (min-width: 1300px) {
@@ -48,7 +47,7 @@
     margin-right: 23px;
     --cards: 5;
 
-    
+
 }
 
 .header-item:last-child {
