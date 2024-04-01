@@ -1,0 +1,105 @@
+.hero {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: #e7ecef;
+    background-image: url(../img/hero-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 910px) {
+        padding-top: 55px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        padding-top: 95px;
+        padding-bottom: 86px;
+    }
+
+
+    &__title {
+        color: var(--title-color);
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        @media screen and (min-width: 910px){
+            font-size: 64px;
+            margin-bottom: 40px;
+        }
+      
+    }
+
+    &__text {
+        color: var(--text-color);
+        font-size: 16px;
+        font-weight: 350;
+        line-height: 1.67;
+        max-width: 628px;
+        margin-bottom: 40px;
+        
+        @media screen and (min-width: 910px){
+            font-size: 24px;  
+        }
+     
+    }
+
+    &__button {
+        color: var(--button-color);
+        text-align: center;
+        font-size: 24px;
+        background-color: var(--accent-color);
+        padding: 25px 16px;
+        border-radius: 20px;
+        background: var(--Accent, #1f6c94);
+        display: none;
+        @media screen and (min-width: 910px){
+            display: block;
+            margin-bottom: 60px;
+        } 
+          @media screen and (min-width: 1300px){
+            margin-bottom: 40px;
+        }
+    }
+
+    &__views {
+        color: var(--text-color);
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 1.33;
+        align-items: center;
+        @media screen and (min-width: 910px){
+          display: flex;
+          font-size: 12px;
+        } 
+          @media screen and (min-width: 1300px){
+            font-size: 12px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-bottom: 245px;
+    }
+
+    &__stats {
+        margin-left: 8px;
+    }
+
+    &__mark {
+        font-weight: 400;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__visitors {
+        color: var(--title-color);
+        font-size: 18px;
+        font-weight: 350;
+        line-height: 1;
+        margin-bottom: 6px;
+    }
+}

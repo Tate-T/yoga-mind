@@ -47,73 +47,7 @@ body {
   width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards));
 }
 
-.hero {
-  padding-top: 95px;
-  padding-bottom: 80px;
-  background-color: #e7ecef;
-  background-image: url(../img/hero-background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.hero-title {
-  color: var(--title-color);
-  font-size: 64px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.hero-text {
-  color: var(--text-color);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.67;
-  max-width: 628px;
-  margin-bottom: 40px;
-}
-
-.hero-button {
-  color: var(--button-color);
-  text-align: center;
-  font-size: 24px;
-  background-color: var(--accent-color);
-  padding: 25px 16px;
-  border-radius: 20px;
-  background: var(--Accent, #1f6c94);
-  margin-bottom: 40px;
-}
-.hero-content {
-  display: flex;
-  margin-bottom: 245px;
-}
-.hero-stats {
-  margin-left: 8px;
-}
-.hero-mark {
-  font-weight: 400;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-.hero-socials {
-  display: flex;
-  gap: 16px;
-}
-.hero-visitors {
-  color: var(--title-color);
-  font-size: 18px;
-  font-weight: 350;
-  line-height: 1;
-  margin-bottom: 6px;
-}
-
-.hero-views {
-  color: var(--text-color);
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 1.33;
-  display: flex;
-  align-items: center;
-}
 
 .program {
   padding-top: 120px;
