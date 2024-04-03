@@ -21,11 +21,12 @@
         font-size: 36px;
         font-weight: 500;
         margin-bottom: 16px;
-        @media screen and (min-width: 910px){
+
+        @media screen and (min-width: 910px) {
             font-size: 64px;
             margin-bottom: 40px;
         }
-      
+
     }
 
     &__text {
@@ -35,11 +36,11 @@
         line-height: 1.67;
         max-width: 628px;
         margin-bottom: 40px;
-        
-        @media screen and (min-width: 910px){
-            font-size: 24px;  
+
+        @media screen and (min-width: 910px) {
+            font-size: 24px;
         }
-     
+
     }
 
     &__button {
@@ -51,13 +52,20 @@
         border-radius: 20px;
         background: var(--Accent, #1f6c94);
         display: none;
-        @media screen and (min-width: 910px){
+
+        @media screen and (min-width: 910px) {
             display: block;
             margin-bottom: 60px;
-        } 
-          @media screen and (min-width: 1300px){
+        }
+
+        @media screen and (min-width: 1300px) {
             margin-bottom: 40px;
         }
+    }
+
+    &-img {
+        width: 50px;
+        height: 50px;
     }
 
     &__views {
@@ -66,18 +74,25 @@
         font-weight: 300;
         line-height: 1.33;
         align-items: center;
-        @media screen and (min-width: 910px){
-          display: flex;
-          font-size: 12px;
-        } 
-          @media screen and (min-width: 1300px){
+        display: flex;
+
+        @media screen and (min-width: 910px) {
+            display: flex;
             font-size: 12px;
         }
     }
 
     &__content {
         display: flex;
-        margin-bottom: 245px;
+        margin-bottom: 438px;
+
+        @media screen and (min-width: 910px) {
+            margin-bottom: 578px;
+        }
+        
+        @media screen and (min-width: 1300px) {
+            margin-bottom: 245px;
+        }
     }
 
     &__stats {
@@ -97,9 +112,13 @@
 
     &__visitors {
         color: var(--title-color);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 350;
-        line-height: 1;
-        margin-bottom: 6px;
+        line-height: 18px;
+        margin-bottom: 5px;
+
+        @media screen and (min-width: 910px) {
+            font-size: 18px;
+        }
     }
 }

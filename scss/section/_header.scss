@@ -2,6 +2,14 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 910px) {
+        justify-content: end;
+    }
+
+    @media screen and (min-width: 1300px) {
+        justify-content: start;
+    }
 }
 
 .header {
@@ -20,11 +28,10 @@
 .header-logo {
     color: var(--title-color);
     font-size: 20px;
-    margin-right: 73px;
+    margin-right: auto;
 
     @media screen and (min-width: 910px) {
         font-size: 32px;
-        margin-right: 94px;
     }
 
     @media screen and (min-width: 1300px) {
@@ -34,20 +41,20 @@
 
 .header-list {
     display: none;
-    margin-right: 74px;
     // --grid-gap: 23px;
 
     @media screen and (min-width: 910px) {
         display: flex;
+    }
 
+    @media screen and (min-width: 1300px) {
+        margin-right: auto;
     }
 }
 
 .header-item {
     margin-right: 23px;
     --cards: 5;
-
-
 }
 
 .header-item:last-child {
@@ -64,13 +71,32 @@
     font-weight: 700;
 }
 
+.header-call {
+    color: var(--Accent, #1F6C94);
+    text-align: center;
+    font-family: "KyivType Sans";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+
+    @media screen and (min-width: 910px) {
+        color: var(--Accent, #1F6C94);
+        text-align: center;
+        font-family: "KyivType Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
 .header-btn {
+    display: block;
+    font-family: inherit;
     color: var(--accent-color);
     text-align: center;
-    font-size: 16px;
-    display: flex;
-    height: 80px;
-    padding: 10px 16px;
+    font-size: 10px;
+    height: 27px;
+    padding: none;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -79,7 +105,15 @@
     border: none;
 
     @media screen and (min-width: 910px) {
+        display: flex;
         border: 1px solid var(--Accent, #1f6c94);
+        height: 80px;
+        padding: 17px 29px;
+        margin-top: 40px;
+    }
+
+    @media screen and (min-width: 1300px) {
+        margin-top: 0;
     }
 }
 
@@ -91,12 +125,33 @@
 
 .header-tel {
     display: block;
+    color: var(--Accent, #1F6C94);
+    text-align: center;
+    font-family: "KyivType Sans";
+    font-size: 10px;
+    font-weight: 500;
+    line-height: normal;
+
+    @media screen and (min-width: 910px) {
+        color: var(--Accent, #1F6C94);
+        text-align: center;
+        font-family: "KyivType Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
 }
 
 .header-icon {
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     fill: var(--accent-color);
+
+    @media screen and (min-width: 910px) {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .header-btn:hover>.header-icon {
