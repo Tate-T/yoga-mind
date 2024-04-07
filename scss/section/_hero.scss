@@ -44,6 +44,7 @@
     }
 
     &__button {
+        border: 1px solid var(--accent-color);
         color: var(--button-color);
         text-align: center;
         font-size: 24px;
@@ -121,4 +122,31 @@
             font-size: 18px;
         }
     }
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero-yoga-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-yoga {
+    margin-left: 15px;
+    margin-bottom: 79px;
+}
+
+.hero-yoga1 {
+    margin-bottom: 6px;
+    margin-right: 330px;
+}
+
+
+
+.hero__button:hover{
+    background-color: #e7ecef;
+    color: var(--accent-color);
 }

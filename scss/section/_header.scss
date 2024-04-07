@@ -119,8 +119,16 @@
 
 .header-btn:hover {
     background-color: var(--accent-color);
-    color: #e7ecef;
+    color: var();
     box-shadow: var(--title-color) 1px 2px 15px 4px;
+}
+
+.header-btn:hover > .header-call {
+    color: #E7ECEF;
+}
+
+.header-btn:hover .header-tel {
+    color: #E7ECEF;
 }
 
 .header-tel {
@@ -154,6 +162,6 @@
     }
 }
 
-.header-btn:hover>.header-icon {
+.header-btn:hover > .header-icon {
     fill: #e7ecef;
 }
