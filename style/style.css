@@ -10,15 +10,6 @@
   --cards: 4;
 }
 
-body {
-  font-family: Raleway;
-}
-.container {
-  width: 1300px;
-  padding: 0 10px;
-  margin: 0 auto;
-}
-
 .soclials-icons {
   stroke: var(--icons-color);
   fill: transparent;
@@ -37,98 +28,6 @@ body {
   box-shadow: var(--accent-color) 1px 2px 15px 4px;
 }
 
-.grid-list {
-  display: flex;
-  justify-content: center;
-  gap: var(--grid-gap);
-}
-
-.grid-item {
-  width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards));
-}
-
-
-
-.program {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.program-title {
-  color: var(--accent-color, #1f6c94);
-  font-size: 40px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 18px;
-}
-
-.program-description {
-  color: var(--secondary-text-color, #5c686d);
-  text-align: center;
-  font-size: 24px;
-  font-weight: 350;
-  line-height: 1.67;
-  margin-bottom: 54px;
-}
-
-/*.program-list {} */
-
-.program-item {
-  background-color: var(--button-color);
-  border-radius: 20px;
-  text-align: center;
-  padding-top: 16px;
-  padding-bottom: 17px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.program-name {
-  color: var(--accent-color, #1f6c94);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.47;
-  margin-bottom: 24px;
-}
-
-.program-info {
-  color: var(--Paragraph, #555d65);
-  text-align: center;
-  font-size: 16px;
-  line-height: 0.97;
-}
-.program-romb {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 9px;
-  margin-bottom: 20px;
-}
-.program-button {
-  color: var(--accent-color);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 23px;
-  margin-bottom: 17px;
-  padding: 10px 16px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 20px;
-  border: 1px solid var(--accent-color);
-  font-family: "KyivType Sans";
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-}
-.program-icon {
-  stroke: var(--accent-color);
-  fill: transparent;
-  width: 17px;
-  height: 13px;
-  stroke-width: 2px;
-}
 .trainer {
   background-color: #e7ecef;
   height: 835px;

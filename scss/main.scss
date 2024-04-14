@@ -1,3 +1,6 @@
 @import "./base/common";
+@import"./base/reset";
+@import "./components.scss/grid";
 @import"./section/header";
 @import "./section/hero";
+@import "./section/program";
