@@ -91,7 +91,7 @@ button {
 }
 
 .header-logo {
-  color: var(--title-color);
+  color: #111517;
   font-size: 20px;
   margin-right: auto;
 }
@@ -130,13 +130,13 @@ button {
 }
 
 .header-link {
-  color: var(--title-color);
+  color: #111517;
   font-size: 24px;
   position: relative;
 }
 
 .header-call {
-  color: var(--Accent, #1f6c94);
+  color: #1f6c94;
   text-align: center;
   font-family: "KyivType Sans";
   font-size: 10px;
@@ -145,7 +145,7 @@ button {
 }
 @media screen and (min-width: 910px) {
   .header-call {
-    color: var(--Accent, #1f6c94);
+    color: #1f6c94;
     text-align: center;
     font-family: "KyivType Sans";
     font-size: 16px;
@@ -157,7 +157,7 @@ button {
 .header-btn {
   display: block;
   font-family: inherit;
-  color: var(--accent-color);
+  color: #1f6c94;
   text-align: center;
   font-size: 10px;
   height: 27px;
@@ -172,7 +172,7 @@ button {
 @media screen and (min-width: 910px) {
   .header-btn {
     display: flex;
-    border: 1px solid var(--Accent, #1f6c94);
+    border: 1px solid #1f6c94;
     height: 80px;
     padding: 17px 29px;
     margin-top: 40px;
@@ -185,9 +185,8 @@ button {
 }
 
 .header-btn:hover {
-  background-color: var(--accent-color);
-  color: var();
-  box-shadow: var(--title-color) 1px 2px 15px 4px;
+  background-color: #1f6c94;
+  box-shadow: #111517 1px 2px 15px 4px;
 }
 
 .header-btn:hover > .header-call {
@@ -200,7 +199,7 @@ button {
 
 .header-tel {
   display: block;
-  color: var(--Accent, #1f6c94);
+  color: #1f6c94;
   text-align: center;
   font-family: "KyivType Sans";
   font-size: 10px;
@@ -209,7 +208,7 @@ button {
 }
 @media screen and (min-width: 910px) {
   .header-tel {
-    color: var(--Accent, #1f6c94);
+    color: #1f6c94;
     text-align: center;
     font-family: "KyivType Sans";
     font-size: 16px;
@@ -221,7 +220,7 @@ button {
 .header-icon {
   width: 12px;
   height: 12px;
-  fill: var(--accent-color);
+  fill: #1f6c94;
 }
 @media screen and (min-width: 910px) {
   .header-icon {
@@ -244,16 +243,109 @@ button {
   bottom: -12px;
   width: 12px;
   height: 12px;
-  background-color: var(--accent-color);
+  background-color: #1f6c94;
 }
 
 .header-link:hover {
-  color: var(--accent-color);
+  color: #1f6c94;
   font-weight: 700;
 }
 
 .header-link:hover > .header-link::after {
   opacity: 1;
+}
+
+.header-navigation {
+  background-color: #5C686D;
+  padding-top: 7px;
+  padding-bottom: 9px;
+}
+@media screen and (min-width: 910px) {
+  .header-navigation {
+    display: none;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+
+.header-label {
+  height: 24px;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  stroke: #E7ECEF;
+}
+
+.header-close {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: #E7ECEF;
+  opacity: 0;
+}
+
+.menu-list {
+  display: none;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+}
+
+input[type=checkbox]:checked ~ .header-label > .header-menu {
+  opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .header-label > .header-close {
+  opacity: 1;
+}
+
+input[type=checkbox]:checked ~ .menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.menu-list {
+  padding: 10px;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(-50%, 0);
+  background-color: #5C686D;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+}
+
+.menu-link {
+  color: whitesmoke;
+  font-family: "KyivType Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .hero {
@@ -276,7 +368,7 @@ button {
   }
 }
 .hero__title {
-  color: var(--title-color);
+  color: #111517;
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 16px;
@@ -288,7 +380,7 @@ button {
   }
 }
 .hero__text {
-  color: var(--text-color);
+  color: #555d65;
   font-size: 16px;
   font-weight: 350;
   line-height: 1.67;
@@ -301,14 +393,14 @@ button {
   }
 }
 .hero__button {
-  border: 1px solid var(--accent-color);
-  color: var(--button-color);
+  border: 1px solid #1f6c94;
+  color: #e7ecef;
   text-align: center;
   font-size: 24px;
-  background-color: var(--accent-color);
+  background-color: #1f6c94;
   padding: 25px 16px;
   border-radius: 20px;
-  background: var(--Accent, #1f6c94);
+  background: #1f6c94;
   display: none;
 }
 @media screen and (min-width: 910px) {
@@ -327,7 +419,7 @@ button {
   height: 50px;
 }
 .hero__views {
-  color: var(--text-color);
+  color: #555d65;
   font-size: 10px;
   font-weight: 300;
   line-height: 1.33;
@@ -367,7 +459,7 @@ button {
   gap: 16px;
 }
 .hero__visitors {
-  color: var(--title-color);
+  color: #111517;
   font-size: 14px;
   font-weight: 350;
   line-height: 18px;
@@ -401,7 +493,7 @@ button {
 
 .hero__button:hover {
   background-color: #e7ecef;
-  color: var(--accent-color);
+  color: #1f6c94;
 }
 
 .hero__title::before {
@@ -409,7 +501,7 @@ button {
   display: block;
   width: 30px;
   height: 30px;
-  background-color: var(--accent-color);
+  background-color: #1f6c94;
   position: absolute;
   top: -18px;
   left: 18px;
@@ -430,7 +522,7 @@ button {
   }
 }
 .program__title {
-  color: var(--accent-color, #1f6c94);
+  color: #1f6c94;
   font-size: 24px;
   font-weight: 500;
   display: flex;
@@ -443,7 +535,7 @@ button {
   }
 }
 .program__description {
-  color: var(--secondary-text-color, #5c686d);
+  color: #5c686d;
   text-align: start;
   font-size: 14px;
   font-weight: 350;
@@ -476,7 +568,7 @@ button {
   }
 }
 .program__item {
-  background-color: var(--button-color);
+  background-color: #e7ecef;
   border-radius: 20px;
   text-align: center;
   padding: 16px 19px 17px;
@@ -495,14 +587,14 @@ button {
   }
 }
 .program__name {
-  color: var(--accent-color, #1f6c94);
+  color: #1f6c94;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.47;
   margin-bottom: 24px;
 }
 .program__info {
-  color: var(--Paragraph, #555d65);
+  color: #555d65;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -535,13 +627,13 @@ button {
   }
 }
 .program__button {
-  color: var(--accent-color);
+  color: #1f6c94;
   margin: 23px auto 17px;
   padding: 10px 16px;
   align-items: center;
   gap: 10px;
   border-radius: 20px;
-  border: 1px solid var(--accent-color);
+  border: 1px solid #1f6c94;
   font-family: "KyivType Sans";
   font-size: 14px;
   font-weight: 400;
@@ -561,7 +653,7 @@ button {
   }
 }
 .program__icon {
-  stroke: var(--accent-color);
+  stroke: #1f6c94;
   fill: transparent;
   width: 17px;
   height: 13px;

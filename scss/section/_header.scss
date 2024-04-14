@@ -26,7 +26,7 @@
 }
 
 .header-logo {
-  color: var(--title-color);
+  color: $title-color;
   font-size: 20px;
   margin-right: auto;
 
@@ -62,14 +62,14 @@
 }
 
 .header-link {
-  color: var(--title-color);
+  color: $title-color;
   font-size: 24px;
   position: relative;
 }
 
 
 .header-call {
-  color: var(--Accent, #1f6c94);
+  color: $accent-color;
   text-align: center;
   font-family: "KyivType Sans";
   font-size: 10px;
@@ -77,7 +77,7 @@
   line-height: normal;
 
   @media screen and (min-width: 910px) {
-    color: var(--Accent, #1f6c94);
+    color: $accent-color;
     text-align: center;
     font-family: "KyivType Sans";
     font-size: 16px;
@@ -89,7 +89,7 @@
 .header-btn {
   display: block;
   font-family: inherit;
-  color: var(--accent-color);
+  color: $accent-color;
   text-align: center;
   font-size: 10px;
   height: 27px;
@@ -103,7 +103,7 @@
 
   @media screen and (min-width: 910px) {
     display: flex;
-    border: 1px solid var(--Accent, #1f6c94);
+    border: 1px solid $accent-color;
     height: 80px;
     padding: 17px 29px;
     margin-top: 40px;
@@ -115,9 +115,8 @@
 }
 
 .header-btn:hover {
-  background-color: var(--accent-color);
-  color: var();
-  box-shadow: var(--title-color) 1px 2px 15px 4px;
+  background-color: $accent-color;
+  box-shadow: $title-color 1px 2px 15px 4px;
 }
 
 .header-btn:hover > .header-call {
@@ -130,7 +129,7 @@
 
 .header-tel {
   display: block;
-  color: var(--Accent, #1f6c94);
+  color: $accent-color;
   text-align: center;
   font-family: "KyivType Sans";
   font-size: 10px;
@@ -138,7 +137,7 @@
   line-height: normal;
 
   @media screen and (min-width: 910px) {
-    color: var(--Accent, #1f6c94);
+    color: $accent-color;
     text-align: center;
     font-family: "KyivType Sans";
     font-size: 16px;
@@ -150,7 +149,7 @@
 .header-icon {
   width: 12px;
   height: 12px;
-  fill: var(--accent-color);
+  fill: $accent-color;
 
   @media screen and (min-width: 910px) {
     width: 24px;
@@ -171,14 +170,106 @@
   bottom: -12px;
   width: 12px;
   height: 12px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .header-link:hover {
-  color: var(--accent-color);
+  color: $accent-color;
   font-weight: 700;
 }
 
 .header-link:hover>.header-link::after {
   opacity: 1;
+}
+
+.header-navigation {
+  background-color: #5C686D;
+  padding-top: 7px;
+  padding-bottom: 9px;
+
+  @media screen and (min-width: 910px) {
+    display: none;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+
+.header-label {
+  height: 24px;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  stroke: #E7ECEF;
+}
+
+.header-close {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: #E7ECEF;
+  opacity: 0;
+}
+
+.menu-list {
+  display: none;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+}
+
+input[type="checkbox"]:checked ~ .header-label > .header-menu {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .header-label > .header-close {
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked ~ .menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.menu-list {
+  padding: 10px;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(-50%, 0);
+  background-color: #5C686D;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+}
+
+.menu-link {
+  color: whitesmoke;
+font-family: "KyivType Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
