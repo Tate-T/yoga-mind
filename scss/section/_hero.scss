@@ -145,3 +145,14 @@
   background-color: #e7ecef;
   color: var(--accent-color);
 }
+.hero__title::before{
+  content: "";
+  display: block;
+  width: 30px;
+    height: 30px;
+    background-color: var(--accent-color);
+    position: absolute;
+    top: -18px;
+    left: 18px;
+    transform: rotate(45deg);
+}
