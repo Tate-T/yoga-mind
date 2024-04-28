@@ -150,14 +150,20 @@
   background-color: #e7ecef;
   color: $accent-color;
 }
-.hero__title::before{
+
+.hero__title::before {
   content: "";
   display: block;
   width: 30px;
-    height: 30px;
-    background-color: $accent-color;
-    position: absolute;
-    top: -18px;
-    left: 18px;
-    transform: rotate(45deg);
+  height: 30px;
+  background-color: $accent-color;
+  position: absolute;
+  top: -18px;
+  left: 18px;
+  transform: rotate(45deg);
+  transition: transform 250ms linear 100ms;
+}
+
+.hero__title:hover::before {
+  transform: rotate(405deg);
 }

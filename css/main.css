@@ -527,6 +527,11 @@ input[type=checkbox]:checked ~ .menu-list {
   top: -18px;
   left: 18px;
   transform: rotate(45deg);
+  transition: transform 250ms linear 100ms;
+}
+
+.hero__title:hover::before {
+  transform: rotate(405deg);
 }
 
 .program {
