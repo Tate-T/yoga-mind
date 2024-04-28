@@ -75,6 +75,9 @@
   font-size: 10px;
   font-weight: 400;
   line-height: normal;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
   @media screen and (min-width: 910px) {
     color: $accent-color;
@@ -100,6 +103,13 @@
   flex-shrink: 0;
   border-radius: 20px;
   border: none;
+  transition-property: background-color, box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(.41,.33,.46,.93);
+  
+
+
+
 
   @media screen and (min-width: 910px) {
     display: flex;
@@ -117,6 +127,7 @@
 .header-btn:hover {
   background-color: $accent-color;
   box-shadow: $title-color 1px 2px 15px 4px;
+  transform: scale(1.05);
 }
 
 .header-btn:hover > .header-call {
@@ -135,6 +146,9 @@
   font-size: 10px;
   font-weight: 500;
   line-height: normal;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
   @media screen and (min-width: 910px) {
     color: $accent-color;
@@ -150,6 +164,9 @@
   width: 12px;
   height: 12px;
   fill: $accent-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(.41,.33,.46,.93);
 
   @media screen and (min-width: 910px) {
     width: 24px;
