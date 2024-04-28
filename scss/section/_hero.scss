@@ -141,6 +141,11 @@
   margin-right: 330px;
 }
 
+.hero__button {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+}
+
 .hero__button:hover {
   background-color: #e7ecef;
   color: $accent-color;

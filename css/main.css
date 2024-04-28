@@ -133,6 +133,9 @@ button {
   color: #111517;
   font-size: 24px;
   position: relative;
+  transition-property: font-weight, color;
+  transition-duration: 250ms;
+  transition-delay: 0.5s;
 }
 
 .header-call {
@@ -502,6 +505,11 @@ input[type=checkbox]:checked ~ .menu-list {
 .hero-yoga1 {
   margin-bottom: 6px;
   margin-right: 330px;
+}
+
+.hero__button {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
 }
 
 .hero__button:hover {
