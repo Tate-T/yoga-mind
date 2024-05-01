@@ -62,7 +62,7 @@
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
           </button> -->
-            <input type="checkbox" id="toggle">
+          <input type="checkbox" id="toggle" />
           <label class="header-label" for="toggle">
             <svg class="header-menu">
               <use href="./img/icons.svg#icon-menu"></use>
@@ -81,7 +81,7 @@
             <li class="menu-item">
               <a class="menu-link" href="">Викладачі</a>
             </li>
-            <li class="menu-item ">
+            <li class="menu-item">
               <a class="menu-link" href="">Ціни</a>
             </li>
             <li class="menu-item">
@@ -94,11 +94,35 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <img
-            class="hero-yoga-img hero-yoga"
-            src="./img/bighero.webp"
-            alt="картинка йоги"
-          />
+          <picture>
+            <source
+              media="(min-width: 1300px)"
+              srcset="
+                ./img/desktop/bighero-desktop@1x.webp 1x,
+                ./img/desktop/bighero-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 910px)"
+              srcset="
+                ./img/tablet/bighero-tablet@1x.webp 1x,
+                ./img/tablet/bighero-tablet@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                ./img/mobile/bighero-mobile@1x.webp 1x,
+                ./img/mobile/bighero-mobile@2x.webp 2x
+              "
+            />
+
+            <img
+              class="hero-yoga-img hero-yoga"
+              src="./img/bighero.webp"
+              alt="картинка йоги"
+            />
+          </picture>
           <img
             class="hero-yoga-img hero-yoga1"
             src="./img/smallhero.webp"
