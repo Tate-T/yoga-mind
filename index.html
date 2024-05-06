@@ -1,301 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto&family=Syne&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <section class="header-top">
-        <div class="container header-box">
-          <a class="header-logo" href="./index.html">YogaMind</a>
-          <ul class="header-list grid-list">
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Головна</a>
-            </li>
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Програми</a>
-            </li>
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Викладачі</a>
-            </li>
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Ціни</a>
-            </li>
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Контакти</a>
-            </li>
-          </ul>
-          <a class="header-btn" href="tel:+38009999999999">
-            <svg class="header-icon">
-              <use href="./img/icons.svg#icon-telephone"></use>
-            </svg>
-            <span class="header-call"
-              >телефонуй
-              <span class="header-tel">+380 099 9999 99 99</span>
-            </span>
-          </a>
-        </div>
-      </section>
-      <section class="header-navigation">
-        <div class="container header-container">
-          <!-- <button class="header-button">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto&family=Syne&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <section class="header-top">
+      <div class="container header-box">
+        <a class="header-logo" href="./index.html">YogaMind</a>
+        <ul class="header-list grid-list">
+          <li class="header-item grid-item">
+            <a class="header-link" href="">Головна</a>
+          </li>
+          <li class="header-item grid-item">
+            <a class="header-link" href="">Програми</a>
+          </li>
+          <li class="header-item grid-item">
+            <a class="header-link" href="">Викладачі</a>
+          </li>
+          <li class="header-item grid-item">
+            <a class="header-link" href="">Ціни</a>
+          </li>
+          <li class="header-item grid-item">
+            <a class="header-link" href="">Контакти</a>
+          </li>
+        </ul>
+        <a class="header-btn" href="tel:+38009999999999">
+          <svg class="header-icon">
+            <use href="./img/icons.svg#icon-telephone"></use>
+          </svg>
+          <span class="header-call">телефонуй
+            <span class="header-tel">+380 099 9999 99 99</span>
+          </span>
+        </a>
+      </div>
+    </section>
+    <section class="header-navigation">
+      <div class="container header-container">
+        <!-- <button class="header-button">
             <svg class="header-menu">
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
           </button> -->
-          <input type="checkbox" id="toggle" />
-          <label class="header-label" for="toggle">
-            <svg class="header-menu">
-              <use href="./img/icons.svg#icon-menu"></use>
-            </svg>
-            <svg class="header-close">
-              <use href="./img/icons.svg#icon-close"></use>
-            </svg>
-          </label>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a class="menu-link" href="./index.html">Головна</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="">Програми</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="">Викладачі</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="">Ціни</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="">Контакти</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container hero-container">
-          <picture>
-            <source
-              media="(min-width: 1300px)"
-              srcset="
+        <input type="checkbox" id="toggle" />
+        <label class="header-label" for="toggle">
+          <svg class="header-menu">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+          <svg class="header-close">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </label>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link" href="./index.html">Головна</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Програми</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Викладачі</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Ціни</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-container">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="
                 ./img/desktop/bighero-desktop@1x.webp 1x,
                 ./img/desktop/bighero-desktop@2x.webp 2x
-              "
-            />
-            <source
-              media="(min-width: 910px)"
-              srcset="
+              " />
+          <source media="(min-width: 910px)" srcset="
                 ./img/tablet/bighero-tablet@1x.webp 1x,
                 ./img/tablet/bighero-tablet@2x.webp 2x
-              "
-            />
-            <source
-              media="(min-width: 320px)"
-              srcset="
+              " />
+          <source media="(min-width: 320px)" srcset="
                 ./img/mobile/bighero-mobile@1x.webp 1x,
                 ./img/mobile/bighero-mobile@2x.webp 2x
-              "
-            />
+              " />
 
-            <img
-              class="hero-yoga-img hero-yoga"
-              src="./img/bighero.webp"
-              alt="картинка йоги"
-            />
-          </picture>
-          <img
-            class="hero-yoga-img hero-yoga1"
-            src="./img/smallhero.webp"
-            alt="картинка йоги"
-          />
-          <h1 class="hero__title">Йога - стан твоєї душі</h1>
-          <p class="hero__text">
-            Йога допомагає пізнати себе як зовні, так і зсередини. Це чудовий
-            спосіб відволіктися від проблем і позбутися непотрібних думок.
-          </p>
-          <button class="hero__button" type="button">
-            Записатись на занняття
-          </button>
-          <div class="hero__content">
-            <img
-              class="hero-img"
-              src="./img/viwe3.png"
-              alt="viwe3"
-              class="hero__photo"
-            />
-            <img
-              class="hero-img"
-              src="./img/viwe2.png"
-              alt="viwe2"
-              class="hero__photo"
-            />
-            <img
-              class="hero-img"
-              src="./img/viwe.png"
-              alt="viwe"
-              class="hero__photo"
-            />
-            <div class="hero__stats">
-              <p class="hero__visitors">Наші відвідувачі</p>
-              <p class="hero__views">
-                <img src="./img/star.png" alt="star" />
-                <span class="hero__mark">4.9</span>
-                (1.5к переглядів)
-              </p>
-            </div>
+          <img class="hero-yoga-img hero-yoga" src="./img/bighero.webp" alt="картинка йоги" />
+        </picture>
+        <picture>
+          <source media="(min-width: 1300px)" srcset="
+                ./img/desktop/smallhero-desktop@1x.webp 1x,
+                ./img/desktop/smallhero-desktop@2x.webp 2x
+              " />
+
+          <source media="(min-width: 910px)" srcset="
+                ./img/tablet/smallhero-tablet@1x.webp 1x,
+                ./img/tablet/smallhero-tablet@2x.webp 2x
+              " />
+
+          <source media="(min-width: 320px)" srcset="
+                ./img/mobile/smallhero-mobile@1x.webp 1x,
+                ./img/mobile/smallhero-mobile@2x.webp 2x
+              " />
+
+          <img class="hero-yoga-img hero-yoga1" src="./img/smallhero.webp" alt="картинка йоги" />
+        </picture>
+        <h1 class="hero__title">Йога - стан твоєї душі</h1>
+        <p class="hero__text">
+          Йога допомагає пізнати себе як зовні, так і зсередини. Це чудовий
+          спосіб відволіктися від проблем і позбутися непотрібних думок.
+        </p>
+        <button class="hero__button" type="button">
+          Записатись на занняття
+        </button>
+        <div class="hero__content">
+          <img class="hero-img" src="./img/viwe3.png" alt="viwe3" class="hero__photo" />
+          <img class="hero-img" src="./img/viwe2.png" alt="viwe2" class="hero__photo" />
+          <img class="hero-img" src="./img/viwe.png" alt="viwe" class="hero__photo" />
+          <div class="hero__stats">
+            <p class="hero__visitors">Наші відвідувачі</p>
+            <p class="hero__views">
+              <img src="./img/star.png" alt="star" />
+              <span class="hero__mark">4.9</span>
+              (1.5к переглядів)
+            </p>
           </div>
-          <ul class="hero__socials soclials">
-            <li class="hero__social soclials-item">
-              <svg class="soclials-icons">
-                <use href="./img/icons.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li class="hero__social soclials-item">
-              <svg class="soclials-icons">
-                <use href="./img/icons.svg#icon-instagram"></use>
-              </svg>
-            </li>
-            <li class="hero__social soclials-item">
-              <svg class="soclials-icons">
-                <use href="./img/icons.svg#icon-youtube"></use>
-              </svg>
-            </li>
-          </ul>
         </div>
-      </section>
-      <!-- program youga mind -->
-      <section class="program">
-        <div class="container">
-          <h2 class="program__title">Популярні програми від YogaMind</h2>
-          <p class="program__description">
-            Відчуй прекрасне разом з нами, здобувай гармонію тіла й духу.
-          </p>
-          <ul class="program__list grid-list">
-            <li class="program__item grid-item">
-              <h3 class="program__name">Аштанга йога</h3>
-              <p class="program__info">
-                Покращує гнучкість та розвиває агальну силу тіла. Крім того,
-                тонізує м'язи та сприяє зниженню ваги.
-              </p>
-              <img
-                class="program__romb"
-                src="./img/Polygon 8.svg"
-                alt="asana"
-              />
-              <img
-                class="program__foto"
-                src="./img/program/pict.jpg"
-                alt="exercise-in-nature"
-              />
-              <div class="overlay">
-                <button class="program__button" type="button">
-                  <span>Дізнатись більше</span>
-                  <svg class="program__icon">
-                    <use href="./img/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="program__item grid-item">
-              <h3 class="program__name">Віньяса Флоу</h3>
-              <p class="program__info">
-                Як і всі інші види йоги, віньяса зміцнює м'язи спини і покращує
-                тонус. Крім цього вона допомагає схуднути.
-              </p>
-              <img
-                class="program__romb"
-                src="./img/Polygon 8.svg"
-                alt="asana"
-              />
-              <img
-                class="program__foto"
-                src="./img/program/pict1.jpg"
-                alt="exercise-for-two"
-              />
-              <div class="overlay">
-                <button class="program__button" type="button">
-                  <span>Дізнатись більше</span>
-                  <svg class="program__icon">
-                    <use href="./img/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="program__item grid-item">
-              <h3 class="program__name">Хатха йога</h3>
-              <p class="program__info">
-                Хатха йога відмінно зміцнює м'язи спини та витягує хребет.
-                Допомагає позбутися болю в спині, шиї.
-              </p>
-              <img
-                class="program__romb"
-                src="./img/Polygon 8.svg"
-                alt="asana"
-              />
-              <img
-                class="program__foto"
-                src="./img/program/pict2.jpg"
-                alt="lunges"
-              />
-              <div class="overlay">
-                <button class="program__button" type="button">
-                  <span>Дізнатись більше</span>
-                  <svg class="program__icon">
-                    <use href="./img/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="program__item grid-item">
-              <h3 class="program__name">Робота з пресом</h3>
-              <p class="program__info">
-                Якщо ви хочете мати гарну поставу та міцний прес – ця програма
-                йоги, те що вам потрібно.
-              </p>
-              <img
-                class="program__romb"
-                src="./img/Polygon 8.svg"
-                alt="asana"
-              />
-              <img
-                class="program__foto"
-                src="./img/program/pict3.jpg"
-                alt="asana"
-              />
-              <div class="overlay">
-                <button class="program__button" type="button">
-                  <span>Дізнатись більше</span>
-                  <svg class="program__icon">
-                    <use href="./img/icons.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- trainer -->
-      <!-- <section class="trainer">
+        <ul class="hero__socials soclials">
+          <li class="hero__social soclials-item">
+            <svg class="soclials-icons">
+              <use href="./img/icons.svg#icon-facebook"></use>
+            </svg>
+          </li>
+          <li class="hero__social soclials-item">
+            <svg class="soclials-icons">
+              <use href="./img/icons.svg#icon-instagram"></use>
+            </svg>
+          </li>
+          <li class="hero__social soclials-item">
+            <svg class="soclials-icons">
+              <use href="./img/icons.svg#icon-youtube"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- program youga mind -->
+    <section class="program">
+      <div class="container">
+        <h2 class="program__title">Популярні програми від YogaMind</h2>
+        <p class="program__description">
+          Відчуй прекрасне разом з нами, здобувай гармонію тіла й духу.
+        </p>
+        <ul class="program__list grid-list">
+          <li class="program__item grid-item">
+            <h3 class="program__name">Аштанга йога</h3>
+            <p class="program__info">
+              Покращує гнучкість та розвиває агальну силу тіла. Крім того,
+              тонізує м'язи та сприяє зниженню ваги.
+            </p>
+            <img class="program__romb" src="./img/Polygon 8.svg" alt="asana" />
+
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="./img/desktop/pict-desktop@1x.webp 1x, ./img/desktop/pict-desktop@2x.webp 2x">
+
+              <source media="(min-width: 910px)"
+                srcset="./img/tablet/pict-tablet@1x.webp 1x, ./img/tablet/pict-tablet@2x.webp 2x">
+
+              <source media="(min-width: 320px)"
+                srcset="./img/mobile/pict-mobile@1x.webp 1x, ./img/mobile/pict-mobile@2x.webp 2x">
+
+              <img class="program__foto" src="./img/program/pict.jpg" alt="exercise-in-nature" />
+            </picture>
+            <div class="overlay">
+              <button class="program__button" type="button">
+                <span>Дізнатись більше</span>
+                <svg class="program__icon">
+                  <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="program__item grid-item">
+            <h3 class="program__name">Віньяса Флоу</h3>
+            <p class="program__info">
+              Як і всі інші види йоги, віньяса зміцнює м'язи спини і покращує
+              тонус. Крім цього вона допомагає схуднути.
+            </p>
+            <img class="program__romb" src="./img/Polygon 8.svg" alt="asana" />
+
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="./img/desktop/pict1-desktop@1x.webp 1x, ./img/desktop/pict1-desktop@2x.webp 2x">
+
+              <source media="(min-width: 910px)"
+                srcset="./img/tablet/pict1-tablet@1x.webp 1x, ./img/tablet/pict1-tablet@2x.webp 2x">
+
+              <!-- <source media="(min-width: 320px)"
+                srcset="./img/mobile/pict1-mobile@1x.webp 1x, ./img/mobile/pict1-mobile@2x.webp 2x"> -->
+
+              <img class="program__foto" src="./img/program/pict1.jpg" alt="exercise-for-two" />
+            </picture>
+            <div class="overlay">
+              <button class="program__button" type="button">
+                <span>Дізнатись більше</span>
+                <svg class="program__icon">
+                  <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="program__item grid-item">
+            <h3 class="program__name">Хатха йога</h3>
+            <p class="program__info">
+              Хатха йога відмінно зміцнює м'язи спини та витягує хребет.
+              Допомагає позбутися болю в спині, шиї.
+            </p>
+            <img class="program__romb" src="./img/Polygon 8.svg" alt="asana" />
+
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="./img/desktop/pict2-desktop@1x.webp 1x, ./img/desktop/pict2-desktop@2x.webp 2x">
+
+              <source media="(min-width: 910px)"
+                srcset="./img/tablet/pict2-tablet@1x.webp 1x, ./img/tablet/pict2-tablet@2x.webp 2x">
+
+              <!-- <source media="(min-width: 320px)"
+                srcset="./img/mobile/pict2-mobile@1x.webp 1x, ./img/mobile/pict2-mobile@2x.webp 2x"> -->
+
+                <img class="program__foto" src="./img/program/pict2.jpg" alt="lunges" />
+            </picture>
+
+            <div class="overlay">
+              <button class="program__button" type="button">
+                <span>Дізнатись більше</span>
+                <svg class="program__icon">
+                  <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="program__item grid-item">
+            <h3 class="program__name">Робота з пресом</h3>
+            <p class="program__info">
+              Якщо ви хочете мати гарну поставу та міцний прес – ця програма
+              йоги, те що вам потрібно.
+            </p>
+            <img class="program__romb" src="./img/Polygon 8.svg" alt="asana" />
+            <img class="program__foto" src="./img/program/pict3.jpg" alt="asana" />
+            <div class="overlay">
+              <button class="program__button" type="button">
+                <span>Дізнатись більше</span>
+                <svg class="program__icon">
+                  <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- trainer -->
+    <!-- <section class="trainer">
         <div class="container trainer-box">
           <img src="./img/rest.jpg" alt="rest" class="trainer-img" />
           <img class="trainer-9" src="./img/Polygon 9.svg" alt="" />
@@ -328,8 +313,8 @@
           </article>
         </div>
       </section> -->
-      <!-- ticket -->
-      <!-- <section class="ticket">
+    <!-- ticket -->
+    <!-- <section class="ticket">
         <div class="container">
           <h2 class="ticket-title">Популярні абонементи</h2>
           <p class="ticket-description">
@@ -375,8 +360,8 @@
           </ul>
         </div>
       </section> -->
-      <!-- Schedule -->
-      <!-- <section class="schedule">
+    <!-- Schedule -->
+    <!-- <section class="schedule">
         <div class="container schedule-boxing">
           <div class="schedule-container">
             <h2 class="schedule-title">Робочі години</h2>
@@ -418,8 +403,8 @@
           </div>
         </div>
       </section> -->
-    </main>
-    <!-- <footer class="youga">
+  </main>
+  <!-- <footer class="youga">
       <div class="container youga-box">
         <h3 class="youga-title">YogaMind</h3>
         <p class="youga-copyright">
@@ -427,5 +412,6 @@
         </p>
       </div>
     </footer> -->
-  </body>
+</body>
+
 </html>
