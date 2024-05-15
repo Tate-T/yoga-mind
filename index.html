@@ -20,13 +20,18 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
 
   <body>
     <header class="header">
       <section class="header-top">
         <div class="container header-box">
-          <a class="header-logo" href="./index.html">YogaMind</a>
+          <a class="header-logo animate__heartBeat" href="./index.html">YogaMind</a>
           <ul class="header-list grid-list">
             <li class="header-item grid-item">
               <a class="header-link" href="">Головна</a>
@@ -62,7 +67,7 @@
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
           </button> -->
-            <input type="checkbox" id="toggle">
+          <input type="checkbox" id="toggle" />
           <label class="header-label" for="toggle">
             <svg class="header-menu">
               <use href="./img/icons.svg#icon-menu"></use>
@@ -81,7 +86,7 @@
             <li class="menu-item">
               <a class="menu-link" href="">Викладачі</a>
             </li>
-            <li class="menu-item ">
+            <li class="menu-item">
               <a class="menu-link" href="">Ціни</a>
             </li>
             <li class="menu-item">
@@ -94,16 +99,66 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <img
-            class="hero-yoga-img hero-yoga"
-            src="./img/bighero.webp"
-            alt="картинка йоги"
-          />
-          <img
-            class="hero-yoga-img hero-yoga1"
-            src="./img/smallhero.webp"
-            alt="картинка йоги"
-          />
+          <picture>
+            <source
+              media="(min-width: 1300px)"
+              srcset="
+                ./img/desktop/bighero-desktop@1x.webp 1x,
+                ./img/desktop/bighero-desktop@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 910px)"
+              srcset="
+                ./img/tablet/bighero-tablet@1x.webp 1x,
+                ./img/tablet/bighero-tablet@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                ./img/mobile/bighero-mobile@1x.webp 1x,
+                ./img/mobile/bighero-mobile@2x.webp 2x
+              "
+            />
+
+            <img
+              class="hero-yoga-img hero-yoga"
+              src="./img/bighero.webp"
+              alt="картинка йоги"
+            />
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 1300px)"
+              srcset="
+                ./img/desktop/smallhero-desktop@1x.webp 1x,
+                ./img/desktop/smallhero-desktop@2x.webp 2x
+              "
+            />
+
+            <source
+              media="(min-width: 910px)"
+              srcset="
+                ./img/tablet/smallhero-tablet@1x.webp 1x,
+                ./img/tablet/smallhero-tablet@2x.webp 2x
+              "
+            />
+
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                ./img/mobile/smallhero-mobile@1x.webp 1x,
+                ./img/mobile/smallhero-mobile@2x.webp 2x
+              "
+            />
+
+            <img
+              class="hero-yoga-img hero-yoga1"
+              src="./img/smallhero.webp"
+              alt="картинка йоги"
+            />
+          </picture>
           <h1 class="hero__title">Йога - стан твоєї душі</h1>
           <p class="hero__text">
             Йога допомагає пізнати себе як зовні, так і зсередини. Це чудовий
@@ -167,7 +222,7 @@
             Відчуй прекрасне разом з нами, здобувай гармонію тіла й духу.
           </p>
           <ul class="program__list grid-list">
-            <li class="program__item grid-item">
+            <li class="program__item grid-item" data-aos="fade-down">
               <h3 class="program__name">Аштанга йога</h3>
               <p class="program__info">
                 Покращує гнучкість та розвиває агальну силу тіла. Крім того,
@@ -178,11 +233,38 @@
                 src="./img/Polygon 8.svg"
                 alt="asana"
               />
-              <img
-                class="program__foto"
-                src="./img/program/pict.jpg"
-                alt="exercise-in-nature"
-              />
+
+              <picture>
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="
+                    ./img/desktop/pict-desktop@1x.webp 1x,
+                    ./img/desktop/pict-desktop@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 910px)"
+                  srcset="
+                    ./img/tablet/pict-tablet@1x.webp 1x,
+                    ./img/tablet/pict-tablet@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./img/mobile/pict-mobile@1x.webp 1x,
+                    ./img/mobile/pict-mobile@2x.webp 2x
+                  "
+                />
+
+                <img
+                  class="program__foto"
+                  src="./img/program/pict.jpg"
+                  alt="exercise-in-nature"
+                />
+              </picture>
               <div class="overlay">
                 <button class="program__button" type="button">
                   <span>Дізнатись більше</span>
@@ -192,7 +274,7 @@
                 </button>
               </div>
             </li>
-            <li class="program__item grid-item">
+            <li class="program__item grid-item" data-aos="fade-down">
               <h3 class="program__name">Віньяса Флоу</h3>
               <p class="program__info">
                 Як і всі інші види йоги, віньяса зміцнює м'язи спини і покращує
@@ -203,11 +285,33 @@
                 src="./img/Polygon 8.svg"
                 alt="asana"
               />
-              <img
-                class="program__foto"
-                src="./img/program/pict1.jpg"
-                alt="exercise-for-two"
-              />
+
+              <picture>
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="
+                    ./img/desktop/pict1-desktop@1x.webp 1x,
+                    ./img/desktop/pict1-desktop@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 910px)"
+                  srcset="
+                    ./img/tablet/pict1-tablet@1x.webp 1x,
+                    ./img/tablet/pict1-tablet@2x.webp 2x
+                  "
+                />
+
+                <!-- <source media="(min-width: 320px)"
+                srcset="./img/mobile/pict1-mobile@1x.webp 1x, ./img/mobile/pict1-mobile@2x.webp 2x"> -->
+
+                <img
+                  class="program__foto"
+                  src="./img/program/pict1.jpg"
+                  alt="exercise-for-two"
+                />
+              </picture>
               <div class="overlay">
                 <button class="program__button" type="button">
                   <span>Дізнатись більше</span>
@@ -217,7 +321,7 @@
                 </button>
               </div>
             </li>
-            <li class="program__item grid-item">
+            <li class="program__item grid-item" data-aos="fade-down">
               <h3 class="program__name">Хатха йога</h3>
               <p class="program__info">
                 Хатха йога відмінно зміцнює м'язи спини та витягує хребет.
@@ -228,11 +332,34 @@
                 src="./img/Polygon 8.svg"
                 alt="asana"
               />
-              <img
-                class="program__foto"
-                src="./img/program/pict2.jpg"
-                alt="lunges"
-              />
+
+              <picture>
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="
+                    ./img/desktop/pict2-desktop@1x.webp 1x,
+                    ./img/desktop/pict2-desktop@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 910px)"
+                  srcset="
+                    ./img/tablet/pict2-tablet@1x.webp 1x,
+                    ./img/tablet/pict2-tablet@2x.webp 2x
+                  "
+                />
+
+                <!-- <source media="(min-width: 320px)"
+                srcset="./img/mobile/pict2-mobile@1x.webp 1x, ./img/mobile/pict2-mobile@2x.webp 2x"> -->
+
+                <img
+                  class="program__foto"
+                  src="./img/program/pict2.jpg"
+                  alt="lunges"
+                />
+              </picture>
+
               <div class="overlay">
                 <button class="program__button" type="button">
                   <span>Дізнатись більше</span>
@@ -242,7 +369,7 @@
                 </button>
               </div>
             </li>
-            <li class="program__item grid-item">
+            <li class="program__item grid-item" data-aos="fade-down">
               <h3 class="program__name">Робота з пресом</h3>
               <p class="program__info">
                 Якщо ви хочете мати гарну поставу та міцний прес – ця програма
@@ -271,7 +398,7 @@
         </div>
       </section>
       <!-- trainer -->
-      <!-- <section class="trainer">
+      <section class="trainer">
         <div class="container trainer-box">
           <img src="./img/rest.jpg" alt="rest" class="trainer-img" />
           <img class="trainer-9" src="./img/Polygon 9.svg" alt="" />
@@ -303,16 +430,16 @@
             <p class="trainer-description">Сертифікований тренер з йоги</p>
           </article>
         </div>
-      </section> -->
+      </section>
       <!-- ticket -->
-      <!-- <section class="ticket">
+      <section class="ticket">
         <div class="container">
           <h2 class="ticket-title">Популярні абонементи</h2>
           <p class="ticket-description">
             Надихайся йогою: перше пробне заняття - безкоштовно!
           </p>
           <ul class="ticket-list grid-list">
-            <li class="ticket-item grid-item">
+            <li data-aos-duration="1500" data-aos="flip-down" class="ticket-item grid-item">
               <article class="ticket-article">
                 <h2 class="ticket-price">150 грн</h2>
                 <p class="ticket-info">
@@ -327,14 +454,14 @@
                 alt="щоб-ви-були-щасливі"
               />
             </li>
-            <li class="ticket-item-two grid-item">
+            <li data-aos-duration="1500" data-aos="flip-up" class="ticket-item-two grid-item">
               <h2 class="ticket-price-two">1200 грн</h2>
               <p class="ticket-info-two">
                 Абонемент на 8 занять + 2 індивідуальних заняття з тренером
               </p>
               <button type="button" class="ticket-button-two">Придбати</button>
             </li>
-            <li class="ticket-item">
+            <li data-aos-duration="1500" data-aos="flip-down" class="ticket-item">
               <article class="ticket-article">
                 <h2 class="ticket-price">1800 грн</h2>
                 <p class="ticket-info">
@@ -350,9 +477,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- Schedule -->
-      <!-- <section class="schedule">
+      </section>
+      <!-- Schedul -->
+      <section class="schedule">
         <div class="container schedule-boxing">
           <div class="schedule-container">
             <h2 class="schedule-title">Робочі години</h2>
@@ -393,15 +520,19 @@
             >
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="youga">
+    <footer class="youga">
       <div class="container youga-box">
         <h3 class="youga-title">YogaMind</h3>
         <p class="youga-copyright">
           Copyright © 2023 YogaMind Studio. All rights reserved
         </p>
       </div>
-    </footer> -->
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
