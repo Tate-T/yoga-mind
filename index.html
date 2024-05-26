@@ -20,77 +20,79 @@
     />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
     <header class="header">
-      <section class="header-top">
-        <div class="container header-box">
-          <a class="header-logo animate__heartBeat" href="./index.html">YogaMind</a>
-          <ul class="header-list grid-list">
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Головна</a>
+      <section class="header__top">
+        <div class="container header__box">
+          <a class="header__logo animate__heartBeat" href="./index.html"
+            >YogaMind</a
+          >
+          <ul class="header__list grid-list">
+            <li class="header__item grid-item">
+              <a class="header__link" href="">Головна</a>
             </li>
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Програми</a>
+            <li class="header__item grid-item">
+              <a class="header__link" href="">Програми</a>
             </li>
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Викладачі</a>
+            <li class="header__item grid-item">
+              <a class="header__link" href="">Викладачі</a>
             </li>
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Ціни</a>
+            <li class="header__item grid-item">
+              <a class="header__link" href="">Ціни</a>
             </li>
-            <li class="header-item grid-item">
-              <a class="header-link" href="">Контакти</a>
+            <li class="header__item grid-item">
+              <a class="header__link" href="">Контакти</a>
             </li>
           </ul>
-          <a class="header-btn" href="tel:+38009999999999">
-            <svg class="header-icon">
+          <a class="header__btn" href="tel:+38009999999999">
+            <svg class="header__icon">
               <use href="./img/icons.svg#icon-telephone"></use>
             </svg>
-            <span class="header-call"
+            <span class="header__call"
               >телефонуй
-              <span class="header-tel">+380 099 9999 99 99</span>
+              <span class="header__tel">+380 099 9999 99 99</span>
             </span>
           </a>
         </div>
       </section>
-      <section class="header-navigation">
-        <div class="container header-container">
+      <section class="header__navigation">
+        <div class="container header__container">
           <!-- <button class="header-button">
             <svg class="header-menu">
             <use href="./img/icons.svg#icon-menu"></use>
           </svg>
           </button> -->
           <input type="checkbox" id="toggle" />
-          <label class="header-label" for="toggle">
-            <svg class="header-menu">
+          <label class="header__label" for="toggle">
+            <svg class="header__menu">
               <use href="./img/icons.svg#icon-menu"></use>
             </svg>
-            <svg class="header-close">
+            <svg class="header__close">
               <use href="./img/icons.svg#icon-close"></use>
             </svg>
           </label>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a class="menu-link" href="./index.html">Головна</a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">Головна</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link" href="">Програми</a>
+            <li class="menu__item">
+              <a class="men__-link" href="">Програми</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link" href="">Викладачі</a>
+            <li class="menu__item">
+              <a class="menu__link" href="">Викладачі</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link" href="">Ціни</a>
+            <li class="menu__item">
+              <a class="menu__link" href="">Ціни</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link" href="">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link" href="">Контакти</a>
             </li>
           </ul>
         </div>
@@ -439,7 +441,11 @@
             Надихайся йогою: перше пробне заняття - безкоштовно!
           </p>
           <ul class="ticket-list grid-list">
-            <li data-aos-duration="1500" data-aos="flip-down" class="ticket-item grid-item">
+            <li
+              data-aos-duration="1500"
+              data-aos="flip-down"
+              class="ticket-item grid-item"
+            >
               <article class="ticket-article">
                 <h2 class="ticket-price">150 грн</h2>
                 <p class="ticket-info">
@@ -454,14 +460,22 @@
                 alt="щоб-ви-були-щасливі"
               />
             </li>
-            <li data-aos-duration="1500" data-aos="flip-up" class="ticket-item-two grid-item">
+            <li
+              data-aos-duration="1500"
+              data-aos="flip-up"
+              class="ticket-item-two grid-item"
+            >
               <h2 class="ticket-price-two">1200 грн</h2>
               <p class="ticket-info-two">
                 Абонемент на 8 занять + 2 індивідуальних заняття з тренером
               </p>
               <button type="button" class="ticket-button-two">Придбати</button>
             </li>
-            <li data-aos-duration="1500" data-aos="flip-down" class="ticket-item">
+            <li
+              data-aos-duration="1500"
+              data-aos="flip-down"
+              class="ticket-item"
+            >
               <article class="ticket-article">
                 <h2 class="ticket-price">1800 грн</h2>
                 <p class="ticket-info">
