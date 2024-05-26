@@ -6,34 +6,23 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  background-image: url(../../img/mobile/hero-background-tadlet@1x.webp);
 
-  
-
-
-    background-image: url(../../img/mobile/hero-background-tadlet@1x.webp);
-   
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../../img/mobile/hero-background-mobile@2x.webp);
-
   }
-  
-  
-
-
 
   @media screen and (min-width: 910px) {
     background-image: url(../../img/tablet/hero-background-tadlet@1x.webp);
     padding-top: 55px;
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../../img/tablet/hero-background-tablet@2x.webp);
-    
-
-  }
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../img/tablet/hero-background-tablet@2x.webp);
+    }
   }
 
   @media screen and (min-width: 1300px) {
@@ -41,16 +30,12 @@
     padding-bottom: 86px;
     background-image: url(../../img/desktop/hero-background-desktop@1x.webp);
 
-
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../../img/desktop/hero-background-desktop@2x.webp);
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../img/desktop/hero-background-desktop@2x.webp);
+    }
   }
-
-  }
-
-  
 
   &__title {
     color: $title-color;
@@ -61,6 +46,23 @@
     @media screen and (min-width: 910px) {
       font-size: 64px;
       margin-bottom: 40px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: $accent-color;
+      position: absolute;
+      top: -18px;
+      left: 18px;
+      transform: rotate(45deg);
+      transition: transform 250ms linear 100ms;
+    }
+
+    &:hover::before {
+      transform: rotate(405deg);
     }
   }
 
@@ -98,7 +100,7 @@
     }
   }
 
-  &-img {
+  &__img {
     width: 50px;
     height: 50px;
   }
@@ -156,51 +158,34 @@
       font-size: 18px;
     }
   }
-}
 
-.hero-container {
-  position: relative;
-}
+  &__container {
+    position: relative;
+  }
 
-.hero-yoga-img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
+  &__client {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 
-.hero-yoga {
-  margin-left: 15px;
-  margin-bottom: 79px;
-}
+  &__yoga {
+    margin-left: 15px;
+    margin-bottom: 79px;
+  }
 
-.hero-yoga1 {
-  margin-bottom: 6px;
-  margin-right: 66px;
-}
+  &__yoga1 {
+    margin-bottom: 6px;
+    margin-right: 66px;
+  }
 
-.hero__button {
-  transition-property: background-color, color;
-  transition-duration: 250ms;
-}
+  &__button {
+    transition-property: background-color, color;
+    transition-duration: 250ms;
 
-.hero__button:hover {
-  background-color: #e7ecef;
-  color: $accent-color;
-}
-
-.hero__title::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-color: $accent-color;
-  position: absolute;
-  top: -18px;
-  left: 18px;
-  transform: rotate(45deg);
-  transition: transform 250ms linear 100ms;
-}
-
-.hero__title:hover::before {
-  transform: rotate(405deg);
+    &:hover {
+      background-color: #e7ecef;
+      color: $accent-color;
+    }
+  }
 }
