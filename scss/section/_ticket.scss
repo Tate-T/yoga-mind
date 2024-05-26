@@ -1,0 +1,120 @@
+.ticket {
+    margin-bottom: 186px;
+    margin-top: 106px;
+
+    &__title {
+        color: #1f6c94;
+        font-family: KyivType Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 24px;
+    }
+
+    &__description {
+        color: #555d65;
+        font-family: KyivType Sans;
+        font-size: 24px;
+        font-style: normal;
+        line-height: 150%;
+        margin-bottom: 112px;
+    }
+
+    &__list {
+        $grid-gap: 73px;
+    }
+
+    &__item {
+        width: 360px;
+        height: 318px;
+        $cards: 3;
+
+
+    }
+
+    &__article {
+        border-radius: 10px;
+        background: #e7ecef;
+    }
+
+    &__price {
+        width: 297px;
+        color: #1f6c94;
+        font-family: KyivType Sans;
+        font-size: 58px;
+        font-weight: 500;
+        line-height: 63.8px;
+        padding-top: 26px;
+        margin-bottom: 60px;
+        margin-left: 26px;
+        margin-right: 37px;
+    }
+
+    &__info {
+        width: 308px;
+        height: 59px;
+        color: #1f6c94;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19.52px;
+        margin-bottom: 40px;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+    &__button {
+        color: #e7ecef;
+        text-align: center;
+        margin-left: 195px;
+        margin-bottom: 26px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1.12px;
+        text-transform: uppercase;
+        width: 139px;
+        height: 43px;
+        border-radius: 20px;
+        background-color: #1f6c94;
+    }
+
+    &__polygon {
+        position: absolute;
+        display: block;
+        margin-left: 175px;
+        margin-top: 16px;
+    }
+
+    &__decore {
+        border-radius: 10px;
+        background-color: #1f6c94;
+        $cards: 3;
+        width: 360px;
+
+        &>.ticket__info {
+            color: #e7ecef;
+        }
+
+        &>.ticket__button {
+            color: #1f6c94;
+            text-align: center;
+            margin-left: 195px;
+            margin-bottom: 26px;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1.12px;
+            text-transform: uppercase;
+            width: 139px;
+            height: 43px;
+            border-radius: 20px;
+            background-color: #e7ecef;
+        }
+
+        &>.ticket__price {
+            color: #e7ecef;
+        }
+    }
+
+
+}
