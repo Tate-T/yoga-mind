@@ -1,98 +1,159 @@
 .trainer {
-    background-color: #e7ecef;
-    height: 835px;
+  background-color: #e7ecef;
 
-    &__box {
-        display: flex;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 24px;
+
+    @media screen and (min-width: 910px) {
+      flex-direction: row;
+      padding-top: 60px;
+      justify-content: flex-end;
     }
 
-    &__img {
-        margin-top: 120px;
-        margin-bottom: 60px;
-        margin-left: 95px;
-        margin-right: 128px;
-        height: 512px;
+    @media screen and (min-width: 1300px) {
+      padding-top: 120px;
+    }
+  }
+
+  &__img {
+    // margin-top: 120px;
+    // margin-bottom: 60px;
+    // margin-left: 95px;
+    // margin-right: 128px;
+    position: absolute;
+    top: 119px;
+    left: 72px;
+    width: 264px;
+    z-index: 1;
+
+    @media screen and (min-width: 910px) {
+      width: 352px;
+      top: 120px;
+      left: 79px;
     }
 
-    &__photo {
-        position: absolute;
-        margin-top: 93px;
-        margin-left: 43px;
+    @media screen and (min-width: 1300px) {
+      width: 427px;
+      top: 133px;
+      left: 95px;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    top: 99px;
+    left: 14px;
+    width: 264px;
+    height: 359px;
+    z-index: 0;
+
+    @media screen and (min-width: 910px) {
+      width: 352px;
+      height: 480px;
+      top: 93px;
+      left: 1px;
     }
 
-    &__descript {
-        width: 634px;
-        margin-top: 120px;
+    @media screen and (min-width: 1300px) {
+      width: 427px;
+      height: 528px;
+      top: 100px;
+      left: 0;
+    }
+  }
+
+  &__descript {
+    @media screen and (min-width: 910px) {
+      max-width: 365px;
     }
 
-    &__title {
-        color: var(--accent-color, #1f6c94);
-        font-family: KyivType Sans;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 500;
-        margin-bottom: 40px;
+    @media screen and (min-width: 1300px) {
+      max-width: 634px;
+    }
+  }
+
+  &__title {
+    color: var(--accent-color, #1f6c94);
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 382px;
+
+    @media screen and (min-width: 910px) {
+      margin-bottom: 40px;
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    color: var(--text-color, #555d65);
+    max-width: 630px;
+    margin-bottom: 110px;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 36px;
+
+    @media screen and (min-width: 910px) {
+      line-height: 1.63;
     }
 
-    &__text {
-        color: var(--text-color, #555d65);
-        width: 630px;
-        margin-bottom: 110px;
-        font-family: KyivType Sans;
-        font-size: 24px;
-        line-height: 1.5;
-        margin-bottom: 36px;
+    @media screen and (min-width: 1300px) {
+      line-height: 1.5;
+      font-size: 24px;
     }
+  }
 
-    &__article {
-        display: flex;
-    }
+  &__article {
+    display: flex;
+  }
 
-    &__arrow {
-        margin-left: 80px;
-    }
+  &__arrow {
+    margin-left: 80px;
+  }
 
-    &__name {
-        color: var(--accent-color);
-        font-family: KyivType Sans;
-        font-size: 36px;
-        font-weight: 500;
-        line-height: 1.33;
-        margin-bottom: 16px;
-    }
+  &__name {
+    color: var(--accent-color);
+    font-family: KyivType Sans;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.33;
+    margin-bottom: 16px;
+  }
 
-    &__button {
-        width: 50px;
-        height: 50px;
-        background-color: transparent;
-        border-radius: 50%;
-        border: 2px solid var(--accent-color);
-    }
+  &__button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid var(--accent-color);
+  }
 
-    &__icon {
-        fill: transparent;
-        stroke: var(--accent-color);
-        width: 24px;
-        height: 16px;
+  &__icon {
+    fill: transparent;
+    stroke: var(--accent-color);
+    width: 24px;
+    height: 16px;
+  }
 
-    }
+  &__description {
+    color: var(--title-color, #111517);
+    font-family: KyivType Sans;
+    margin-top: 22px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2;
+  }
 
-    &__description {
-        color: var(--title-color, #111517);
-        font-family: KyivType Sans;
-        margin-top: 22px;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 2;
-    }
-
-    &__tree {
-        position: absolute;
-        margin-top: 60px;
-        margin-left: -30px;
-    }
-
+  &__tree {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: -30px;
+  }
 }
-  
-

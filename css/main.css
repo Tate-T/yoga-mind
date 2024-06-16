@@ -1,3 +1,9 @@
+.grid-list {
+  display: flex;
+  justify-content: center;
+  gap: var(--grid-gap);
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -27,6 +33,12 @@ button {
   border: none;
 }
 
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
 body {
   font-family: Raleway;
 }
@@ -47,12 +59,6 @@ body {
   .container {
     max-width: 1300px;
   }
-}
-
-.grid-list {
-  display: flex;
-  justify-content: center;
-  gap: var(--grid-gap);
 }
 
 .grid-item {
@@ -622,6 +628,8 @@ input[type=checkbox]:checked ~ .menu-list {
 .program__romb {
   display: block;
   margin: 9px auto 20px;
+  width: 11px;
+  height: 11px;
 }
 @media screen and (min-width: 910px) {
   .program__foto {
@@ -700,43 +708,114 @@ input[type=checkbox]:checked ~ .menu-list {
 
 .trainer {
   background-color: #e7ecef;
-  height: 835px;
 }
 .trainer__box {
   display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 24px;
+}
+@media screen and (min-width: 910px) {
+  .trainer__box {
+    flex-direction: row;
+    padding-top: 60px;
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .trainer__box {
+    padding-top: 120px;
+  }
 }
 .trainer__img {
-  margin-top: 120px;
-  margin-bottom: 60px;
-  margin-left: 95px;
-  margin-right: 128px;
-  height: 512px;
+  position: absolute;
+  top: 119px;
+  left: 72px;
+  width: 264px;
+  z-index: 1;
+}
+@media screen and (min-width: 910px) {
+  .trainer__img {
+    width: 352px;
+    top: 120px;
+    left: 79px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .trainer__img {
+    width: 427px;
+    top: 133px;
+    left: 95px;
+  }
 }
 .trainer__photo {
   position: absolute;
-  margin-top: 93px;
-  margin-left: 43px;
+  top: 99px;
+  left: 14px;
+  width: 264px;
+  height: 359px;
+  z-index: 0;
 }
-.trainer__descript {
-  width: 634px;
-  margin-top: 120px;
+@media screen and (min-width: 910px) {
+  .trainer__photo {
+    width: 352px;
+    height: 480px;
+    top: 93px;
+    left: 1px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .trainer__photo {
+    width: 427px;
+    height: 528px;
+    top: 100px;
+    left: 0;
+  }
+}
+@media screen and (min-width: 910px) {
+  .trainer__descript {
+    max-width: 365px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .trainer__descript {
+    max-width: 634px;
+  }
 }
 .trainer__title {
   color: var(--accent-color, #1f6c94);
-  font-family: KyivType Sans;
-  font-size: 40px;
+  font-family: "Roboto";
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 382px;
+}
+@media screen and (min-width: 910px) {
+  .trainer__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
 }
 .trainer__text {
   color: var(--text-color, #555d65);
-  width: 630px;
+  max-width: 630px;
   margin-bottom: 110px;
-  font-family: KyivType Sans;
-  font-size: 24px;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   margin-bottom: 36px;
+}
+@media screen and (min-width: 910px) {
+  .trainer__text {
+    line-height: 1.63;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .trainer__text {
+    line-height: 1.5;
+    font-size: 24px;
+  }
 }
 .trainer__article {
   display: flex;
