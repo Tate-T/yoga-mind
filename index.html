@@ -71,19 +71,23 @@
           </button> -->
           <input type="checkbox" id="toggle" />
           <label class="header__label" for="toggle">
+            <button class="js-open-menu">
             <svg class="header__menu">
               <use href="./img/icons.svg#icon-menu"></use>
             </svg>
+          </button>
+          <button class="js-close-menu">
             <svg class="header__close">
               <use href="./img/icons.svg#icon-close"></use>
             </svg>
+          </button>
           </label>
           <ul class="menu">
             <li class="menu__item">
               <a class="menu__link" href="./index.html">Головна</a>
             </li>
             <li class="menu__item">
-              <a class="men__-link" href="">Програми</a>
+              <a class="menu__link" href="">Програми</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="">Викладачі</a>
@@ -544,6 +548,15 @@
         </p>
       </div>
     </footer> -->
+    <div class="backdrop js-menu-container">
+      <div class="mobile">
+          <a class="mobile__link" href="./index.html">Головна</a>
+          <a class="mobile__link" href="#">Програми</a>
+          <a class="mobile__link" href="#">Викладачі</a>
+          <a class="mobile__link" href="#">Ціни</a>
+          <a class="mobile__link" href="#">Контакти</a>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

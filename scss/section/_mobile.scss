@@ -1,0 +1,30 @@
+.mobile {
+  background-color: lightblue;
+  height: 222px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
+  &__link {
+    font-family: "KyivType Sans";
+    font-size: 10px;
+    font-weight: 400;
+    color: darkblue;
+  }
+}
+
+
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #3f51b5;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
