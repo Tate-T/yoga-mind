@@ -71,14 +71,9 @@
           </button> -->
           <input type="checkbox" id="toggle" />
           <label class="header__label" for="toggle">
-            <button class="js-open-menu">
+            <button class="header__button js-open-menu" type="button">
             <svg class="header__menu">
               <use href="./img/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <button class="js-close-menu">
-            <svg class="header__close">
-              <use href="./img/icons.svg#icon-close"></use>
             </svg>
           </button>
           </label>
@@ -549,17 +544,34 @@
       </div>
     </footer> -->
     <div class="backdrop js-menu-container">
-      <div class="mobile">
-          <a class="mobile__link" href="./index.html">Головна</a>
-          <a class="mobile__link" href="#">Програми</a>
-          <a class="mobile__link" href="#">Викладачі</a>
-          <a class="mobile__link" href="#">Ціни</a>
-          <a class="mobile__link" href="#">Контакти</a>
+      <div class="mobile is-open">
+        <ul class="mobile__list">
+          <li class="mobile__item"><a class="mobile__link" href="./index.html">Головна</a>
+          </li>
+          <li class="mobile__item"><a class="mobile__link" href="#">Програми</a>
+          </li>
+          <li class="mobile__item"><a class="mobile__link" href="#">Викладачі</a>
+          </li>
+          <li class="mobile__item"> <a class="mobile__link" href="#">Ціни</a>
+          </li>
+          <li class="mobile__item"><a class="mobile__link" href="#">Контакти</a>
+          </li>
+        </ul>
+          <button class="mobile__button js-close-menu" type="button">
+            <svg class="mobile__icon">
+              <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          
+          
+         
+          
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>
