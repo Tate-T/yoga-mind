@@ -29,104 +29,11 @@
   box-shadow: var(--accent-color) 1px 2px 15px 4px;
 }
 
-.trainer {
-  background-color: #e7ecef;
-  height: 835px;
-}
-
-.trainer-box {
-  display: flex;
-}
-
-.trainer-img {
-  margin-top: 120px;
-  margin-bottom: 60px;
-  margin-left: 95px;
-  margin-right: 128px;
-  height: 512px;
-}
-
-.trainer-9 {
-  position: absolute;
-  margin-top: 93px;
-  margin-left: 43px;
-}
-
-.back-yoga-tree {
-  position: absolute;
-  margin-top: 60px;
-  margin-left: -30px;
-}
-
-.trainer-descript {
-  width: 634px;
-  margin-top: 120px;
-}
-
-.trainer-title {
-  color: var(--accent-color, #1f6c94);
-  font-family: KyivType Sans;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-
-.trainer-text {
-  color: var(--text-color, #555d65);
-  width: 630px;
-  margin-bottom: 110px;
-  font-family: KyivType Sans;
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 36px;
-}
-
-.trainer-article {
-  display: flex;
-}
-
-.arrow {
-  margin-left: 80px;
-}
-
-.trainer-name {
-  color: var(--accent-color);
-  font-family: KyivType Sans;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1.33;
-  margin-bottom: 16px;
-}
 
 
-.trainer-button {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 2px solid var(--accent-color);
-}
 
 
-.trainer-icon {
-  fill: transparent;
-  stroke: var(--accent-color);
-  width: 24px;
-  height: 16px;
 
-}
-
-
-.trainer-description {
-  color: var(--title-color, #111517);
-  font-family: KyivType Sans;
-  margin-top: 22px;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 2;
-}
 
 .ticket {
   margin-bottom: 186px;
