@@ -1,8 +1,4 @@
-.grid-list {
-    display: flex;
-    justify-content: center;
-    gap: var(--grid-gap);
-  }
+
   
   .grid-item {
     width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards));
