@@ -72,10 +72,10 @@
           <input type="checkbox" id="toggle" />
           <label class="header__label" for="toggle">
             <button class="header__button js-open-menu" type="button">
-            <svg class="header__menu">
-              <use href="./img/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
+              <svg class="header__menu">
+                <use href="./img/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
           </label>
           <ul class="menu">
             <li class="menu__item">
@@ -401,31 +401,39 @@
       <!-- trainer -->
       <section class="trainer">
         <div class="container trainer__box">
-          <picture>
-            <source
-              media="(min-width: 1300px)"
-              srcset="./img/desktop/rest-desktop@1x.webp 1x,
-              ./img/desktop/rest-desktop@2x.webp 2x"
-            />
+          <div class="trainer__box2">
+            <picture>
+              <source
+                media="(min-width: 1300px)"
+                srcset="
+                  ./img/desktop/rest-desktop@1x.webp 1x,
+                  ./img/desktop/rest-desktop@2x.webp 2x
+                "
+              />
 
-            <source
-              media="(min-width: 910px)"
-              srcset="./img/tablet/rest-tablet-1x.webp 1x,
-              ./img/tablet/rest-tablet-2x.webp 2x"
-            />
+              <source
+                media="(min-width: 910px)"
+                srcset="
+                  ./img/tablet/rest-tablet-1x.webp 1x,
+                  ./img/tablet/rest-tablet-2x.webp 2x
+                "
+              />
 
-            <source
-            media="(min-width: 320px)"
-            srcset="./img/mobile/rest-mobile@1x.webp 1x,
-            ./img/mobile/rest-mobile@2x.webp 2x"
-            />
+              <source
+                media="(min-width: 320px)"
+                srcset="
+                  ./img/mobile/rest-mobile@1x.webp 1x,
+                  ./img/mobile/rest-mobile@2x.webp 2x
+                "
+              />
 
-            <img
-              class="trainer__img"
-              src="./img/mobile/rest-mobile@1x.webp 1x"
-              alt="rest"
-            />
-          </picture>
+              <img
+                class="trainer__img"
+                src="./img/mobile/rest-mobile@1x.webp 1x"
+                alt="rest"
+              />
+            </picture>
+          </div>
           <img class="trainer__9" src="./img/Polygon 9.svg" alt="" />
           <img class="trainer__tree" src="./img/Back yogatree.svg" alt="" />
           <article class="trainer__descript">

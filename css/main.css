@@ -35,6 +35,8 @@ button {
 
 img {
   height: auto;
+  width: 100%;
+  display: block;
   max-width: 100%;
 }
 
@@ -707,18 +709,37 @@ input[type=checkbox]:checked ~ .menu-list {
 
 .trainer {
   background-color: #e7ecef;
-  height: 896px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 910px) {
+  .trainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .trainer {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
 }
 .trainer__box {
   display: flex;
   flex-wrap: wrap;
 }
+.trainer__box2 {
+  width: 264px;
+  height: 264px;
+  outline: solid green;
+  transform: rotate(55deg) skew(25deg) translate(100px, 100px);
+  overflow: hidden;
+}
 .trainer__img {
-  margin-top: 120px;
-  margin-bottom: 60px;
-  margin-left: 95px;
-  margin-right: 128px;
-  height: 512px;
+  transform: rotate(-45deg) translate(0px, -100px);
+  width: 400px;
+  height: 384px;
+  max-width: none;
 }
 .trainer__9 {
   position: absolute;
@@ -749,7 +770,7 @@ input[type=checkbox]:checked ~ .menu-list {
 }
 .trainer__text {
   color: var(--text-color, #555d65);
-  width: 630px;
+  max-width: 630px;
   margin-bottom: 110px;
   font-family: KyivType Sans;
   font-size: 16px;
