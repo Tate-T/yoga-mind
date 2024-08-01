@@ -1,0 +1,91 @@
+.schedule {
+  padding-top: 120px;
+  background-image: url(../img/mobile/yoga-tree-mobile@1x.webp);
+  background-color: var(--button-color);
+  background-repeat: no-repeat;
+  background-position: center top;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/mobile/yoga-tree-mobile@2x.webp);
+  }
+  @media screen and (min-width: 910px) {
+    background-image: url(../img/tablet/yoga-tree-tablet@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/tablet/yoga-tree-tablet@2x.webp);
+    }
+  }
+  @media screen and (min-width: 1300px){
+    background-image: url(../img/desktop/yoga-tree-desktop@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/desktop/yoga-tree-desktop@2x.webp);
+  }
+}
+}
+
+.schedule-boxing:nth-child(odd) {
+  display: flex;
+  justify-content: space-around;
+}
+
+.schedule-title {
+  color: var(--accent-color);
+  font-size: 40px;
+  font-style: normal;
+  display: flex;
+  margin-bottom: 36px;
+  margin-top: 120px;
+}
+
+.schedule-time {
+  color: var(--title-color);
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.schedule-box {
+  margin-left: 36px;
+}
+
+.schedule-list {
+  margin-top: 64px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.schedule-photo {
+  margin-left: 137px;
+  margin-bottom: 53px;
+}
+
+.schedule-information {
+  color: var(--accent-color);
+  font-size: 40px;
+  font-style: normal;
+  margin-bottom: 36px;
+  margin-top: 120px;
+}
+
+.schedule-street {
+  color: var(--title-color);
+  font-size: 20px;
+  font-style: normal;
+  margin-bottom: 80px;
+}
+
+.schedule-watch {
+  color: var(--title-color);
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: 1.28px;
+}
+
+.schedule_pointer {
+  margin-top: 64px;
+}
