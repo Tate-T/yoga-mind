@@ -350,7 +350,8 @@ input[type=checkbox]:checked ~ .menu-list {
   padding-bottom: 15px;
   background-color: #e7ecef;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 140px 350px;
+  background-size: 460px auto;
   background-image: url(../../img/mobile/hero-background-tadlet@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -362,6 +363,8 @@ input[type=checkbox]:checked ~ .menu-list {
   .hero {
     background-image: url(../../img/tablet/hero-background-tadlet@1x.webp);
     padding-top: 55px;
+    background-position: -20px 350px;
+    background-size: 905px auto;
   }
 }
 @media screen and (min-width: 910px) and (min-device-pixel-ratio: 2), screen and (min-width: 910px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 910px) and (min-resolution: 192dpi), screen and (min-width: 910px) and (min-resolution: 2dppx) {
@@ -374,6 +377,8 @@ input[type=checkbox]:checked ~ .menu-list {
     padding-top: 95px;
     padding-bottom: 86px;
     background-image: url(../../img/desktop/hero-background-desktop@1x.webp);
+    background-position: 320px 50px;
+    background-size: 950px auto;
   }
 }
 @media screen and (min-width: 1300px) and (min-device-pixel-ratio: 2), screen and (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1300px) and (min-resolution: 192dpi), screen and (min-width: 1300px) and (min-resolution: 2dppx) {
@@ -507,13 +512,51 @@ input[type=checkbox]:checked ~ .menu-list {
   right: 0;
   bottom: 0;
 }
+.hero__client.hero__yoga1 {
+  right: 80px;
+  bottom: 40px;
+}
+@media screen and (min-width: 910px) {
+  .hero__client.hero__yoga1 {
+    right: 260px;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .hero__client.hero__yoga1 {
+    right: 300px;
+    bottom: 0;
+  }
+}
 .hero__yoga {
   margin-left: 15px;
   margin-bottom: 79px;
+  width: 315px;
+}
+@media screen and (min-width: 910px) {
+  .hero__yoga {
+    width: 630px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .hero__yoga {
+    width: 660px;
+  }
 }
 .hero__yoga1 {
   margin-bottom: 6px;
   margin-right: 66px;
+  width: 200px;
+}
+@media screen and (min-width: 910px) {
+  .hero__yoga1 {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .hero__yoga1 {
+    width: 421px;
+  }
 }
 .hero__button {
   transition-property: background-color, color;

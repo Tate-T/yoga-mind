@@ -4,7 +4,8 @@
   background-color: #e7ecef;
   // background-image: url(../img/hero-background.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 140px 350px;
+  background-size: 460px auto;
 
   background-image: url(../../img/mobile/hero-background-tadlet@1x.webp);
 
@@ -12,12 +13,15 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../../img/mobile/hero-background-mobile@2x.webp);
+
   }
 
   @media screen and (min-width: 910px) {
     background-image: url(../../img/tablet/hero-background-tadlet@1x.webp);
     padding-top: 55px;
 
+    background-position: -20px 350px;
+  background-size: 905px auto;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -30,6 +34,8 @@
     padding-bottom: 86px;
     background-image: url(../../img/desktop/hero-background-desktop@1x.webp);
 
+    background-position: 320px 50px;
+  background-size: 950px auto;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -49,7 +55,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       display: block;
       width: 30px;
       height: 30px;
@@ -167,16 +173,46 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    &.hero__yoga1 {
+      right: 80px;
+      bottom: 40px;
+      @media screen and (min-width: 910px) {
+        right: 260px;
+      bottom: 0;
+      }
+  
+      @media screen and (min-width: 1300px) {
+        right: 300px;
+      bottom: 0;
+      }
+    }
   }
 
   &__yoga {
     margin-left: 15px;
     margin-bottom: 79px;
+    width: 315px;
+    @media screen and (min-width: 910px) {
+      width: 630px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      width: 660px;
+    }
   }
 
   &__yoga1 {
     margin-bottom: 6px;
     margin-right: 66px;
+
+    width: 200px;
+    @media screen and (min-width: 910px) {
+      width: 400px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      width: 421px;
+    }
   }
 
   &__button {
