@@ -51,7 +51,7 @@
   }
 
   &__title {
-    color: var(--accent-color, #1f6c94);
+    color: $accent-color;
     font-family: KyivType Sans;
     font-size: 24px;
     font-style: normal;
@@ -64,7 +64,7 @@
   }
 
   &__text {
-    color: var(--text-color, #555d65);
+    color: $text-color;
     max-width: 630px;
     margin-bottom: 110px;
     font-family: KyivType Sans;
@@ -79,7 +79,7 @@
   }
 
   &__name {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: KyivType Sans;
     font-size: 36px;
     font-weight: 500;
@@ -96,18 +96,18 @@
     height: 50px;
     background-color: transparent;
     border-radius: 50%;
-    border: 2px solid var(--accent-color);
+    border: 2px solid $accent-color;
   }
 
   &__icon {
     fill: transparent;
-    stroke: var(--accent-color);
+    stroke: $accent-color;
     width: 24px;
     height: 16px;
   }
 
   &__description {
-    color: var(--title-color, #111517);
+    color: $title-color, #111517;
     font-family: KyivType Sans;
     margin-top: 22px;
     font-size: 16px;

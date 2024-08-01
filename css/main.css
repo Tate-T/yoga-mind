@@ -367,16 +367,16 @@ input[type=checkbox]:checked + .header__label + .menu {
   background-repeat: no-repeat;
   background-position: 140px 350px;
   background-size: 460px auto;
-  background-image: url(../../img/mobile/hero-background-tadlet@1x.webp);
+  background-image: url(../img/mobile/hero-background-tadlet@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/mobile/hero-background-mobile@2x.webp);
+    background-image: url(../img/mobile/hero-background-mobile@2x.webp);
   }
 }
 @media screen and (min-width: 910px) {
   .hero {
-    background-image: url(../../img/tablet/hero-background-tadlet@1x.webp);
+    background-image: url(../img/tablet/hero-background-tadlet@1x.webp);
     padding-top: 55px;
     background-position: -20px 350px;
     background-size: 905px auto;
@@ -384,21 +384,21 @@ input[type=checkbox]:checked + .header__label + .menu {
 }
 @media screen and (min-width: 910px) and (min-device-pixel-ratio: 2), screen and (min-width: 910px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 910px) and (min-resolution: 192dpi), screen and (min-width: 910px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/tablet/hero-background-tablet@2x.webp);
+    background-image: url(../img/tablet/hero-background-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 1300px) {
   .hero {
     padding-top: 95px;
     padding-bottom: 86px;
-    background-image: url(../../img/desktop/hero-background-desktop@1x.webp);
+    background-image: url(../img/desktop/hero-background-desktop@1x.webp);
     background-position: 320px 50px;
     background-size: 950px auto;
   }
 }
 @media screen and (min-width: 1300px) and (min-device-pixel-ratio: 2), screen and (min-width: 1300px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1300px) and (min-resolution: 192dpi), screen and (min-width: 1300px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../img/desktop/hero-background-desktop@2x.webp);
+    background-image: url(../img/desktop/hero-background-desktop@2x.webp);
   }
 }
 .hero__title {
@@ -818,7 +818,7 @@ input[type=checkbox]:checked + .header__label + .menu {
   margin-top: 120px;
 }
 .trainer__title {
-  color: var(--accent-color, #1f6c94);
+  color: #1f6c94;
   font-family: KyivType Sans;
   font-size: 24px;
   font-style: normal;
@@ -831,7 +831,7 @@ input[type=checkbox]:checked + .header__label + .menu {
   }
 }
 .trainer__text {
-  color: var(--text-color, #555d65);
+  color: #555d65;
   max-width: 630px;
   margin-bottom: 110px;
   font-family: KyivType Sans;
@@ -844,7 +844,7 @@ input[type=checkbox]:checked + .header__label + .menu {
   display: flex;
 }
 .trainer__name {
-  color: var(--accent-color);
+  color: #1f6c94;
   font-family: KyivType Sans;
   font-size: 36px;
   font-weight: 500;
@@ -859,16 +859,16 @@ input[type=checkbox]:checked + .header__label + .menu {
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid var(--accent-color);
+  border: 2px solid #1f6c94;
 }
 .trainer__icon {
   fill: transparent;
-  stroke: var(--accent-color);
+  stroke: #1f6c94;
   width: 24px;
   height: 16px;
 }
 .trainer__description {
-  color: var(--title-color, #111517);
+  color: #111517, #111517;
   font-family: KyivType Sans;
   margin-top: 22px;
   font-size: 16px;
