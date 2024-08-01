@@ -1,5 +1,6 @@
 .grid-list {
     display: flex;
     justify-content: center;
-    gap: var(--grid-gap);
+    gap: $grid-gap;
+    flex-wrap: wrap;
   }

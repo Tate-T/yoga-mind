@@ -18,7 +18,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
@@ -71,29 +70,30 @@
           </button> -->
           <input type="checkbox" id="toggle" />
           <label class="header__label" for="toggle">
-            <button class="header__button js-open-menu" type="button">
+            <!-- <button class="header__button js-open-menu" type="button"> -->
               <svg class="header__menu">
                 <use href="./img/icons.svg#icon-menu"></use>
               </svg>
-            </button>
-          </label>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="./index.html">Головна</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Програми</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Викладачі</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Ціни</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Контакти</a>
-            </li>
-          </ul>
+            <!-- </button> -->
+          
+        </label>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="./index.html">Головна</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Програми</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Викладачі</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Ціни</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Контакти</a>
+          </li>
+        </ul>
         </div>
       </section>
     </header>
@@ -381,11 +381,36 @@
                 src="./img/Polygon 8.svg"
                 alt="asana"
               />
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="
+                    ./img/desktop/pict3-desktop@1x.webp 1x,
+                    ./img/desktop/pict3-desktop@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 910px)"
+                  srcset="
+                    ./img/tablet/pict-tablet@1x.webp 1x,
+                    ./img/tablet/pict-tablet@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./img/mobile/pict-mobile@1x.webp 1x,
+                    ./img/mobile/pict-mobile@2x.webp 2x
+                  "
+                />
+                <img
                 class="program__foto"
                 src="./img/program/pict3.jpg"
                 alt="asana"
               />
+              </picture>
               <div class="overlay">
                 <button class="program__button" type="button">
                   <span>Дізнатись більше</span>
@@ -464,7 +489,7 @@
         </div>
       </section>
       <!-- ticket -->
-      <!-- <section class="ticket">
+      <section class="ticket">
         <div class="container">
           <h2 class="ticket__title">Популярні абонементи</h2>
           <p class="ticket__description">
@@ -521,27 +546,27 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Schedul -->
       <section class="schedule">
-        <div class="container schedule-boxing">
-          <div class="schedule-container">
-            <h2 class="schedule-title">Робочі години</h2>
-            <p class="schedule-time">Понеділок - П'ятниця 7:00 - 21:00</p>
-            <p class="schedule-time">Субота - Неділя 9:00 - 21:00</p>
-            <ul class="schedule-list soclials">
-              <li class="schedule-item soclials-item">
-                <svg class="schedule-icons soclials-icons">
+        <div class="container schedule__boxing">
+          <div class="schedule__box">
+            <h2 class="schedule__title">Робочі години</h2>
+            <p class="schedule__time">Понеділок - П'ятниця 7:00 - 21:00</p>
+            <p class="schedule__time">Субота - Неділя 9:00 - 21:00</p>
+            <ul class="schedule__list soclials">
+              <li class="schedule__item soclials-item">
+                <svg class="schedule__icons soclials-icons">
                   <use href="./img/icons.svg#icon-facebook"></use>
                 </svg>
               </li>
-              <li class="schedule-item soclials-item">
-                <svg class="schedule-icons soclials-icons">
+              <li class="schedule__item soclials-item">
+                <svg class="schedule__icons soclials-icons">
                   <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
               </li>
-              <li class="schedule-item soclials-item">
-                <svg class="schedule-icons soclials-icons">
+              <li class="schedule__item soclials-item">
+                <svg class="schedule__icons soclials-icons">
                   <use href="./img/icons.svg#icon-youtube"></use>
                 </svg>
               </li>
@@ -573,9 +598,9 @@
               class="schedule-photo"
             />
           </picture>
-          <div class="schedule-box">
-            <h2 class="schedule-information">Адреса</h2>
-            <address class="schedule-street">
+          <div class="schedule__box">
+            <h2 class="schedule__information">Адреса</h2>
+            <address class="schedule__street">
               вул. Данила Щербаківського, 45А, 3 Поверх, праве крило
             </address>
             <svg class="soclials-icons">
@@ -584,25 +609,25 @@
 
             <a
               href="https://maps.app.goo.gl/2pWySBkdtik9JWrf9"
-              class="schedule-watch"
+              class="schedule__watch"
               >Дивитись на карті</a
             >
           </div>
         </div>
       </section>
     </main>
-    <!-- <footer class="youga">
-      <div class="container youga-box">
-        <h3 class="youga-title">YogaMind</h3>
-        <p class="youga-copyright">
+    <footer class="yoga">
+      <div class="container yoga__box">
+        <h3 class="yoga__title">YogaMind</h3>
+        <p class="yoga__copyright">
           Copyright © 2023 YogaMind Studio. All rights reserved
         </p>
       </div>
-    </footer> -->
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="./js/mobile.js"></script>
+    <!-- <script src="./js/mobile.js"></script> -->
   </body>
 </html>

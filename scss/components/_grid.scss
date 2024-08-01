@@ -1,5 +1,5 @@
 
   
   .grid-item {
-    width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards));
+    width: calc((100% - $grid-gap * $cards) / $cards);
   }

@@ -1,7 +1,8 @@
 .grid-list {
   display: flex;
   justify-content: center;
-  gap: var(--grid-gap);
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -49,7 +50,6 @@ body {
   margin: 0 auto;
   max-width: 320px;
   width: 100%;
-  outline: solid red;
 }
 @media screen and (min-width: 910px) {
   .container {
@@ -63,7 +63,26 @@ body {
 }
 
 .grid-item {
-  width: calc((100% - var(--grid-gap) * var(--cards)) / var(--cards));
+  width: calc((100% - 80px) / 4);
+}
+
+.soclials-icons {
+  stroke: var(--icons-color);
+  fill: transparent;
+  width: 44px;
+  height: 44px;
+  stroke-opacity: 1;
+  transition: stroke 250ms linear 100ms, box-shadow 250ms linear 100ms;
+}
+
+.soclials-item:nth-child(1) > .soclials-icons {
+  stroke-width: 2px;
+  stroke: var(--icons-color);
+}
+
+.soclials-icons:hover {
+  stroke: var(--accent-color);
+  box-shadow: var(--accent-color) 1px 2px 15px 4px;
 }
 
 .header {
@@ -112,6 +131,7 @@ body {
 }
 .header__list {
   display: none;
+  flex-wrap: nowrap;
 }
 @media screen and (min-width: 910px) {
   .header__list {
@@ -122,9 +142,6 @@ body {
   .header__list {
     margin-right: auto;
   }
-}
-.header__item {
-  margin-right: 23px;
 }
 .header__item:last-child {
   margin-right: 0;
@@ -137,7 +154,7 @@ body {
   transition-duration: 250ms;
   transition-delay: 0.5s;
 }
-.header__link:hover > .header-link::after {
+.header__link:hover > .header__link::after {
   opacity: 1;
 }
 .header__call {
@@ -281,7 +298,7 @@ body {
   background-color: transparent;
 }
 .header__label {
-  height: 24px;
+  display: block;
 }
 .header__menu {
   position: absolute;
@@ -303,8 +320,9 @@ body {
 
 .menu {
   display: none;
-}
-.menu__list {
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
   padding: 10px;
   z-index: 2;
   height: 100vh;
@@ -330,19 +348,16 @@ input[type=checkbox] {
   height: 20px;
 }
 
-input[type=checkbox]:checked ~ .header-label > .header-menu {
+input[type=checkbox]:checked ~ .header__label > .header__menu {
   opacity: 0;
 }
 
-input[type=checkbox]:checked ~ .header-label > .header-close {
+input[type=checkbox]:checked ~ .header__label > .header__close {
   opacity: 1;
 }
 
-input[type=checkbox]:checked ~ .menu-list {
+input[type=checkbox]:checked + .header__label + .menu {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
 }
 
 .hero {
@@ -675,14 +690,18 @@ input[type=checkbox]:checked ~ .menu-list {
   width: 11px;
   height: 11px;
 }
+.program picture {
+  display: block;
+  margin: 0 auto;
+}
 @media screen and (min-width: 910px) {
-  .program__foto {
+  .program picture {
     width: 243px;
     height: 146px;
   }
 }
 @media screen and (min-width: 1300px) {
-  .program__foto {
+  .program picture {
     width: 195px;
     height: 146px;
   }
@@ -859,9 +878,9 @@ input[type=checkbox]:checked ~ .menu-list {
 }
 
 .schedule {
-  padding-top: 120px;
+  padding-top: 30px;
   background-image: url(../img/mobile/yoga-tree-mobile@1x.webp);
-  background-color: var(--button-color);
+  background-color: #e7ecef;
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -872,6 +891,7 @@ input[type=checkbox]:checked ~ .menu-list {
 }
 @media screen and (min-width: 910px) {
   .schedule {
+    padding-top: 105px;
     background-image: url(../img/tablet/yoga-tree-tablet@1x.webp);
   }
 }
@@ -890,68 +910,81 @@ input[type=checkbox]:checked ~ .menu-list {
     background-image: url(../img/desktop/yoga-tree-desktop@2x.webp);
   }
 }
-
-.schedule-boxing:nth-child(odd) {
+.schedule__boxing:nth-child(odd) {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
-
-.schedule-title {
-  color: var(--accent-color);
+@media screen and (min-width: 910px) {
+  .schedule__boxing:nth-child(odd) {
+    flex-direction: row;
+  }
+}
+.schedule__title {
+  color: #1f6c94;
   font-size: 40px;
   font-style: normal;
   display: flex;
   margin-bottom: 36px;
-  margin-top: 120px;
 }
-
-.schedule-time {
-  color: var(--title-color);
+.schedule__time {
+  color: #111517;
   font-size: 20px;
   font-style: normal;
   margin-bottom: 20px;
 }
-
-.schedule-box {
-  margin-left: 36px;
+.schedule__box {
+  max-width: 220px;
 }
-
-.schedule-list {
+@media screen and (min-width: 1300px) {
+  .schedule__box {
+    max-width: 400px;
+  }
+}
+.schedule__list {
   margin-top: 64px;
-  display: flex;
+  display: none;
   justify-content: flex-start;
   gap: 16px;
 }
-
-.schedule-photo {
-  margin-left: 137px;
-  margin-bottom: 53px;
+@media screen and (min-width: 910px) {
+  .schedule__list {
+    display: flex;
+  }
 }
-
-.schedule-information {
-  color: var(--accent-color);
+@media screen and (min-width: 910px) {
+  .schedule__picture {
+    width: 360px;
+    margin-bottom: 53px;
+    margin-left: 137px;
+  }
+}
+.schedule__photo {
+  width: 110px;
+}
+@media screen and (min-width: 910px) {
+  .schedule__photo {
+    width: 384px;
+  }
+}
+.schedule__information {
+  color: #1f6c94;
   font-size: 40px;
   font-style: normal;
   margin-bottom: 36px;
-  margin-top: 120px;
 }
-
-.schedule-street {
-  color: var(--title-color);
+.schedule__street {
+  color: #111517;
   font-size: 20px;
   font-style: normal;
   margin-bottom: 80px;
 }
-
-.schedule-watch {
-  color: var(--title-color);
+.schedule__watch {
+  color: #111517;
   font-size: 20px;
   font-style: normal;
   letter-spacing: 1.28px;
-}
-
-.schedule_pointer {
-  margin-top: 64px;
 }
 
 .ticket {
@@ -962,7 +995,6 @@ input[type=checkbox]:checked ~ .menu-list {
   color: #1f6c94;
   font-family: KyivType Sans;
   font-size: 40px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   margin-bottom: 24px;
@@ -971,7 +1003,6 @@ input[type=checkbox]:checked ~ .menu-list {
   color: #555d65;
   font-family: KyivType Sans;
   font-size: 24px;
-  font-style: normal;
   line-height: 150%;
   margin-bottom: 112px;
 }
@@ -1000,7 +1031,6 @@ input[type=checkbox]:checked ~ .menu-list {
   height: 59px;
   color: #1f6c94;
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
   line-height: 19.52px;
   margin-bottom: 40px;
@@ -1026,6 +1056,7 @@ input[type=checkbox]:checked ~ .menu-list {
   display: block;
   margin-left: 175px;
   margin-top: 16px;
+  width: 11px;
 }
 .ticket__decore {
   border-radius: 10px;
@@ -1051,4 +1082,53 @@ input[type=checkbox]:checked ~ .menu-list {
 }
 .ticket__decore > .ticket__price {
   color: #e7ecef;
+}
+@media screen and (min-width: 910px) and (max-width: 1300px) {
+  .ticket li:nth-child(2) {
+    order: 1;
+  }
+}
+
+.yoga {
+  background-color: #1f6c94;
+  padding: 18px 0;
+}
+@media screen and (min-width: 910px) {
+  .yoga {
+    padding: 44px 0 48px 0;
+  }
+}
+.yoga__title {
+  margin-right: auto;
+}
+.yoga__box {
+  display: flex;
+  align-items: center;
+}
+.yoga__title {
+  color: #fff;
+  font-family: KyivType Sans;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  margin-right: 33px;
+}
+@media screen and (min-width: 910px) {
+  .yoga__title {
+    margin-right: 116px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .yoga__title {
+    margin-right: 343px;
+  }
+}
+.yoga__copyright {
+  color: #fff;
+  font-family: Syne;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
 }/*# sourceMappingURL=main.css.map */

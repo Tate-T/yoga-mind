@@ -1,7 +1,7 @@
 .schedule {
-  padding-top: 120px;
+  padding-top: 30px;
   background-image: url(../img/mobile/yoga-tree-mobile@1x.webp);
-  background-color: var(--button-color);
+  background-color: $button-color;
   background-repeat: no-repeat;
   background-position: center top;
   @media (min-device-pixel-ratio: 2),
@@ -10,6 +10,7 @@
     background-image: url(../img/mobile/yoga-tree-mobile@2x.webp);
   }
   @media screen and (min-width: 910px) {
+    padding-top: 105px;
     background-image: url(../img/tablet/yoga-tree-tablet@1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -17,75 +18,89 @@
       background-image: url(../img/tablet/yoga-tree-tablet@2x.webp);
     }
   }
-  @media screen and (min-width: 1300px){
+  @media screen and (min-width: 1300px) {
     background-image: url(../img/desktop/yoga-tree-desktop@1x.webp);
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../img/desktop/yoga-tree-desktop@2x.webp);
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/desktop/yoga-tree-desktop@2x.webp);
+    }
   }
-}
-}
 
-.schedule-boxing:nth-child(odd) {
-  display: flex;
-  justify-content: space-around;
-}
+  &__boxing:nth-child(odd) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 910px) {
+      flex-direction: row;
+    }
+  }
 
-.schedule-title {
-  color: var(--accent-color);
-  font-size: 40px;
-  font-style: normal;
-  display: flex;
-  margin-bottom: 36px;
-  margin-top: 120px;
-}
+  &__title {
+    color: $accent-color;
+    font-size: 40px;
+    font-style: normal;
+    display: flex;
+    margin-bottom: 36px;
+  }
 
-.schedule-time {
-  color: var(--title-color);
-  font-size: 20px;
-  font-style: normal;
-  margin-bottom: 20px;
-}
+  &__time {
+    color: $title-color;
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
 
-.schedule-box {
-  margin-left: 36px;
-}
+  &__box {
+    max-width: 220px;
+    @media screen and (min-width: 1300px) {
+      max-width: 400px;
+    }
+  }
 
-.schedule-list {
-  margin-top: 64px;
-  display: flex;
-  justify-content: flex-start;
-  gap: 16px;
-}
+  &__list {
+    margin-top: 64px;
+    display: none;
+    justify-content: flex-start;
+    gap: 16px;
+    @media screen and (min-width: 910px) {
+      display: flex;
+    }
+  }
 
-.schedule-photo {
-  margin-left: 137px;
-  margin-bottom: 53px;
-}
+  &__picture {
+    @media screen and (min-width: 910px) {
+      width: 360px;
+      margin-bottom: 53px;
+      margin-left: 137px;
+    }
+  }
+  &__photo {
+    width: 110px;
+    @media screen and (min-width: 910px) {
+      width: 384px;
+    }
+  }
 
-.schedule-information {
-  color: var(--accent-color);
-  font-size: 40px;
-  font-style: normal;
-  margin-bottom: 36px;
-  margin-top: 120px;
-}
+  &__information {
+    color: $accent-color;
+    font-size: 40px;
+    font-style: normal;
+    margin-bottom: 36px;
+  }
 
-.schedule-street {
-  color: var(--title-color);
-  font-size: 20px;
-  font-style: normal;
-  margin-bottom: 80px;
-}
+  &__street {
+    color: $title-color;
+    font-size: 20px;
+    font-style: normal;
+    margin-bottom: 80px;
+  }
 
-.schedule-watch {
-  color: var(--title-color);
-  font-size: 20px;
-  font-style: normal;
-  letter-spacing: 1.28px;
-}
-
-.schedule_pointer {
-  margin-top: 64px;
+  &__watch {
+    color: $title-color;
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: 1.28px;
+  }
 }

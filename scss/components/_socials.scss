@@ -1,0 +1,19 @@
+
+.soclials-icons {
+    stroke: var(--icons-color);
+    fill: transparent;
+    width: 44px;
+    height: 44px;
+    stroke-opacity: 1;
+    transition: stroke 250ms linear 100ms, box-shadow 250ms linear 100ms;
+  }
+  
+  .soclials-item:nth-child(1)>.soclials-icons {
+    stroke-width: 2px;
+    stroke: var(--icons-color);
+  }
+  
+  .soclials-icons:hover {
+    stroke: var(--accent-color);
+    box-shadow: var(--accent-color) 1px 2px 15px 4px;
+  }

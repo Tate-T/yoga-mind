@@ -102,7 +102,9 @@
     height: 11px;
   }
 
-  &__foto {
+  & picture {
+    display: block;
+    margin: 0 auto;
     @media screen and (min-width: 910px) {
       width: 243px;
       height: 146px;

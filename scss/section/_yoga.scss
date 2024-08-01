@@ -1,0 +1,39 @@
+.yoga {
+  background-color: $accent-color;
+  padding: 18px 0;
+  @media screen and (min-width: 910px) {
+    padding: 44px 0 48px 0;
+    }
+  &__title {
+    margin-right: auto;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    color: $footer-color;
+    font-family: KyivType Sans;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.28px; 
+    margin-right: 33px; 
+    @media screen and (min-width: 910px) {
+        margin-right: 116px;
+      }
+    @media screen and (min-width: 1300px) {
+        margin-right: 343px;
+      }
+  }
+
+  &__copyright {
+    color: $footer-color;
+    font-family: Syne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
