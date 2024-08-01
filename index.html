@@ -524,7 +524,7 @@
         </div>
       </section> -->
       <!-- Schedul -->
-      <!-- <section class="schedule">
+      <section class="schedule">
         <div class="container schedule-boxing">
           <div class="schedule-container">
             <h2 class="schedule-title">Робочі години</h2>
@@ -548,7 +548,16 @@
               </li>
             </ul>
           </div>
-          <img src="./img/tree-shadow.png" alt="pict" class="schedule-photo" />
+          <picture class="schedule__picture">
+            <source media="(min-width: 1300px)" srcset="./img/desktop/schedule-hand@desktop-1px.webp 1px, ./img/desktop/schedule-hand@desktop-2px.webp 2px" >
+            <source media="(min-width: 910px)" srcset="./img/tablet/schedule-hand@desktop-1px.webp 1px, ./img/tablet/schedule-hand@desktop-2px.webp 2px" >
+            <source media="(max-width: 909.99px)" srcset="./img/mobile/schedule-hand@desktop-1px.webp 1px, ./img/mobile/schedule-hand@desktop-2px.webp 2px" >
+            <img
+              src="./img/mobile/schedule-hand@mobile-1x.webp"
+              alt="hand-that-meditate"
+              class="schedule-photo"
+            />
+          </picture>
           <div class="schedule-box">
             <h2 class="schedule-information">Адреса</h2>
             <address class="schedule-street">
@@ -565,7 +574,7 @@
             >
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="youga">
       <div class="container youga-box">
